@@ -1,7 +1,7 @@
 ---
 title: Agencies
 description: 'Agencies'
-permalink: /agencies/
+permalink: /agencies/{{ agency.slug}}
 layout: layouts/page
 tags: codegov
 eleventyNavigation:
@@ -13,4 +13,25 @@ sidenav: false
 sticky_sidenav: false
 ---
 
-Agency source code
+<div class="agencies-grid">
+  {% for agency in agency-data %}
+  <li>
+    <a href="/agencies/{{ agency.slug}}">{{ agency.name }}</a>
+  </li>
+  <div class="agency-item">
+    {% include "agency-card.html" %}
+  </div>
+  {% endfor %}
+</div>
+
+<!-- {% include "agency-card.html" %} -->
+<!-- <div class="container">
+  <div class="section-descriptions">
+    <p>Agencies indexed by the OSPO</p>
+  </div>
+  <div class="agencies-grid">
+    {% for agency in agencies %} {% assign agency_slug = agency[0] %} {%
+    assign agency = agency[1] %} {% include "agency-card.html" section_slug: section_slug section:
+    agency %} {% endfor %}
+  </div>
+</div> -->
