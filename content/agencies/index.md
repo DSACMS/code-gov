@@ -1,7 +1,7 @@
 ---
 title: Agencies
 description: 'Agencies'
-permalink: /agencies/{{ agency.slug}}
+permalink: content/agencies/mockData.json
 layout: layouts/page
 tags: codegov
 eleventyNavigation:
@@ -14,9 +14,9 @@ sticky_sidenav: false
 ---
 
 <div class="agencies-grid">
-  {% for agency in agency-data %}
+  {% for agency in mockData %}
   <li>
-    <a href="/agencies/{{ agency.slug}}">{{ agency.name }}</a>
+    <a href="content/agencies/{{ agency.slug }}">{{ agency.name }}</a>
   </li>
   <div class="agency-item">
     {% include "agency-card.html" %}
