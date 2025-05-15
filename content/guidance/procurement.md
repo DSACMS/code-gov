@@ -1,7 +1,7 @@
 ---
 title: Building and Buying Custom Software
 description: 'Procurement'
-permalink: /guidance/procurement
+permalink: /guidance/procurement/
 layout: layouts/page
 tags: codegov
 eleventyNavigation:
