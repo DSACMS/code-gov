@@ -1,7 +1,7 @@
 {
-  "name": "ospo-guide",
+  "name": "code-gov",
   "version": "0.0.0",
-  "description": "CMS OSPO Guide",
+  "description": "code.gov",
   "main": "index.js",
   "scripts": {
     "build": "npm run assets:build && npx @11ty/eleventy",
