@@ -1,0 +1,55 @@
+{
+  "name": "opportunities",
+  "description": "Resource for Public Service Internship and Fellowship Opportunities",
+  "longDescription": "This page shares currently active opportunities for recurring fellowship and internships, related to data science or technology, for work in the U.S. Department of Health and Human Services (HHS). The people of HHS are essential to its vision of making data meaningfully usable and actively used across the Department. Fellowships and internships provide a unique opportunity to learn about government work and to contribute to HHS\u2019 mission of enhancing the health and well-being of all Americans.",
+  "status": "Production",
+  "permissions": {
+    "license": [
+      {
+        "name": "CC0 1.0 Universal",
+        "URL": "https://github.com/DSACMS/opportunities/blob/main/LICENSE.md"
+      }
+    ],
+    "usageType": "openSource",
+    "exemptionText": ""
+  },
+  "organization": "Centers for Medicare & Medicaid Services",
+  "repositoryURL": "https://github.com/DSACMS/opportunities",
+  "vcs": "git",
+  "laborHours": 1460,
+  "platforms": [
+    "web"
+  ],
+  "categories": [
+    "educational-content",
+    "talent-management"
+  ],
+  "softwareType": "standalone/web",
+  "languages": [
+    "HTML",
+    "CSS"
+  ],
+  "maintenance": "internal",
+  "date": {
+    "created": "2023-06-29T15:55:54Z",
+    "lastModified": "2025-02-12T02:50:47Z",
+    "metaDataLastUpdated": "2025-02-12T02:52:38.555Z"
+  },
+  "tags": [
+    "repository"
+  ],
+  "contact": {
+    "email": "opensource@cms.hhs.gov",
+    "name": "CMS/OA/DSAC"
+  },
+  "localisation": false,
+  "repositoryType": "website",
+  "userInput": false,
+  "fismaLevel": "low",
+  "group": "CMS/OA/DSAC",
+  "subsetInHealthcare": "Operational",
+  "userType": "Government",
+  "repositoryHost": "Github.com",
+  "maturityModelTier": 2,
+  "projectType": "Website"
+}
