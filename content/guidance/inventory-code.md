@@ -1,7 +1,7 @@
 ---
 title: Creating your enterprise code inventory
 description: 'Code Inventory'
-permalink: /guidance/code-inventory
+permalink: /guidance/code-inventory/
 layout: layouts/page
 tags: codegov
 eleventyNavigation:
