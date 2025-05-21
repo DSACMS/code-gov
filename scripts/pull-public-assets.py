@@ -15,6 +15,11 @@ def main():
     github_key = os.getenv("GITHUB_TOKEN")
 
     try:
+        os.mkdir(AGENCY_CODEJSON_DIR)
+    except FileExistsError:
+        print(f"File already exists: {AGENCY_CODEJSON_DIR}")
+
+    try:
         for agency in codegovDict.keys():
 
             
@@ -24,11 +29,12 @@ def main():
                 token = github_key
             )
 
+            agency_subdir = os.path.join(AGENCY_CODEJSON_DIR,agency)
 
             try:
-                os.mkdir(AGENCY_CODEJSON_DIR)
+                os.mkdir(agency_subdir)
             except FileExistsError:
-                print(f"File already exists: {AGENCY_CODEJSON_DIR}")
+                print(f"File already exists: {agency_subdir}")
 
             orgs = codegovDict[agency]["orgs"]
             for org in orgs:
