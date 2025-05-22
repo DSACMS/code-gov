@@ -1,14 +1,14 @@
 ---
 title: Building and Buying Custom Software
 description: 'Procurement'
-permalink: /guidance/procurement/
+permalink: /agency-compliance/compliance/procurement/
 layout: layouts/page
 tags: codegov
 eleventyNavigation:
   parent: codegov-guidance
   key: codegov-guidance-procurement
   order: 2
-  title: How to procure software
+  title: How to Procure Software
 sidenav: true
 sticky_sidenav: true
 ---
