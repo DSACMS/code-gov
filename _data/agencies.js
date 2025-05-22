@@ -1,6 +1,8 @@
 const data = require('./mockData.json');
+// const data = require('../code.json');
 
 module.exports = function() {
+    console.log({data})
     return Object.values(data).map((agency) => ({
         name: agency.agency,
         version: agency.version,
