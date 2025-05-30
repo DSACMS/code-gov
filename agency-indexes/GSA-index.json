@@ -6,15 +6,6 @@
   },
   "releases": [
     {
-      "organization": "GSA",
-      "name": "open-gsa-redesign",
-      "agency": "GSA",
-      "measurementType": {
-        "method": "modules"
-      },
-      "version": "2.0.0",
-      "releases": [
-        {
           "name": "mobile-fu",
           "description": "Automatically detect mobile requests from mobile devices in your Rails application.",
           "permissions": {
@@ -31901,9 +31892,7 @@
           "laborHours": 0,
           "vcs": "git",
           "organization": "GSA"
-        }
-      ]
-    },
+        },
     {
       "organization": "GSA",
       "name": "open.gsa.gov",

@@ -6,7 +6,6 @@ const CONFIG = {
   outputFile: path.resolve(__dirname, "../codegov.json"),
 }
 
-
 async function getLegacyJSONs() {
   // we dont have acccess to pull the data from the API so i think the best way to do this
   // is to put all the legacy-index.jsons into one and then have it live within this repo
@@ -41,7 +40,7 @@ async function updateCodeGov() {
         const jsonData = JSON.parse(content)
         
         // store the agency name only for readability in codegov.json 
-        const agencyName = file.split("_")[0]
+        const agencyName = file.split("-")[0]
 
         updatedJSON[agencyName] = jsonData
         console.log(`✅ Successfully processed: ${file}`)
