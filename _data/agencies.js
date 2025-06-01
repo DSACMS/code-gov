@@ -9,7 +9,7 @@ module.exports = function() {
     const agencyData = initialData.map(agency => {
         return {
             agency: agency.agency,
-            orgs: agency.orgs,
+            // orgs: agency.orgs,
             version: agency.version,
             measurementType: agency.measurementType.method,
             releases: agency.releases.map(release => {

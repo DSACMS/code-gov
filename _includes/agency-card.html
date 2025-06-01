@@ -22,9 +22,9 @@
               <span class="text-bold">
                 Organizations: 
               </span>
-              {% for org in agency.orgs %}
+              {% for release in agency.releases %}
               <span>
-                <a href="{{ release.repositoryURL }}">{{ org }}</a>
+                <a href="{{ release.repositoryURL }}">{{ release.organization }}</a>
               </span>
               {% endfor %}
             </li>
@@ -33,19 +33,19 @@
       </div>
     </div>
   </div>
-  {% for release in agency.releases %}
+  <!-- {% for release in agency.releases %}
   <ol>
     <li>{{ release.status }}</li>
-  <!-- {% for platform in release.platforms %} -->
+  {% for platform in release.platforms %}
     <li>
       {{ platform }}
     </li>
-  <!-- {% endfor %} -->
+  {% endfor %}
    {% for language in release.languages %}
    <li>{{ language }}</li>
    {% endfor %}
   </ol>
-  {% endfor %}
+  {% endfor %} -->
 </div>
 
 
