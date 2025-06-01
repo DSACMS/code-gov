@@ -6,7 +6,7 @@
       </div>
       <header class="usa-card__header grid-col-9">
         <h3 class="usa-card__heading font-heading-lg margin-top-0">
-          <a href="" target="_blank" rel="noopener noreferrer">{{ agency.name }}</a>
+          <a href="" target="_blank" rel="noopener noreferrer">{{ agency.agency }}</a>
         </h3>
       </header>
       <ul class="width-full usa-card__body font-body-3xs padding-bottom-3 border-bottom-1px border-base-light">
@@ -22,9 +22,9 @@
               <span class="text-bold">
                 Organizations: 
               </span>
-              {% for release in agency.projects %}
+              {% for org in agency.orgs %}
               <span>
-                <a href="{{ relese.repositoryURL }}">{{ release.name }}</a>
+                <a href="{{ release.repositoryURL }}">{{ org }}</a>
               </span>
               {% endfor %}
             </li>
@@ -33,33 +33,75 @@
       </div>
     </div>
   </div>
+  {% for release in agency.releases %}
+  <ol>
+    <li>{{ release.status }}</li>
+  <!-- {% for platform in release.platforms %} -->
+    <li>
+      {{ platform }}
+    </li>
+  <!-- {% endfor %} -->
+   {% for language in release.languages %}
+   <li>{{ language }}</li>
+   {% endfor %}
+  </ol>
+  {% endfor %}
 </div>
 
-<!-- <div class="agency-header">
-      <div class="usa_icon">
-      🏥
-      </div>
-      <div class="badge">{{ agency.name }}</div>
-    </div>
-    <div>
-      <div class="agency-content">
-      <h3>{{ agency.name }}</h3>
-      <p>{{ agency.version }}</p>
-      <div class="agency-tags">
-        {% for release in agency.projects %}
-        <span class="agency-tag">{{ release.name }}</span>
-        {% endfor %}
-      </div>
-       <a href="{{ agency.projectURL }}" target="_blank" class="btn">Open tool</a> 
-         <a href="{{ agency.repositoryURL }}" target="_blank" class="btn btn-outline">View on GitHub</a> 
-    </div> -->
 
- <!-- name: agency.agency,
-        version: agency.version,
-        projects: agency.releases.map(release => ({
-            organization: release.organization,
-            name: release.name,
-            description: release.description,
-            longDescription: release.description,
-            status: release.status,
-            repositoryURL: release.repositoryURL -->
+<!-- <ol>
+    <li>{{ agency.version }}</li>
+    <li>{{ agency.measurementType }}</li>
+    {% for release in agency.releases %}
+      <ul>
+        <li>{{ release.organization }}</li>
+        <li>{{ release.name }}</li>
+        <li>{{ release.description }}</li>
+        <li>{{ release.longDescription }}</li>
+        <li>{{ release.status }}</li>
+        <li>{{ release.licenseName }}</li>
+        <li>{{ release.licenseURL }}</li>
+        <li>{{ release.usageType }}</li>
+        <li>{{ release.exemptionText }}</li>
+        <li>{{ release.repositoryURL }}</li>
+        <li>{{ release.vcs }}</li>
+        <li>{{ release.laborHours }}</li>
+        {% for platform in release.platforms %}
+        <li>
+          {{ platform }}
+        </li>
+        {% endfor %}
+        {% for category in release.categories %}
+        <li>
+          {{ category }}
+        </li>
+        {% endfor %}
+        <li>{{ release.softwareType }}</li>
+        {% for language in release.languages %}
+        <li>
+          {{ language }}
+        </li>
+        {% endfor %}
+        <li>{{ release.dateCreated }}</li>
+        <li>{{ release.dateLastModified }}</li>
+        <li>{{ release.dateMetaLastUpdated }}</li>
+        {% for tag in release.tags %}
+        <li>
+          {{ tag }}
+        </li>
+        {% endfor %}
+        <li>{{ release.contactEmail }}</li>
+        <li>{{ release.contactName }}</li>
+        <li>{{ release.localisation }}</li>
+        <li>{{ release.repositoryType }}</li>
+        <li>{{ release.userInput }}</li>
+        <li>{{ release.fismaLevel }}</li>
+        <li>{{ release.group }}</li>
+        <li>{{ release.subsetInGovernment }}</li>
+        <li>{{ release.usageType }}</li>
+        <li>{{ release.repositoryHost }}</li>
+        <li>{{ release.maturityModelTier }}</li>
+        <li>{{ release.projectType }}</li>
+      </ul>
+    {% endfor %}
+  </ol> -->

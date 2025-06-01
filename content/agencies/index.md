@@ -13,6 +13,8 @@ sidenav: false
 sticky_sidenav: false
 ---
 
+<script>console.log({{agencies|json}});</script>
+
 <div class="agency-grid">
   {% for agency in agencies %}
     {% include "agency-card.html" %}
