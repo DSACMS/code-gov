@@ -18,7 +18,7 @@ sticky_sidenav: false
 <script>console.log({{ codegovData.agencies | json }})</script>
 <script type="application/json" data-agencies>{{ codegovData.agencies | json }}</script>
 
-<div class="agency-grid grid-row grid-gap margin-top-4">
+<div class="agency-grid">
 </div>
 
-<script src='/assets/_common/js/filters.js>
+<script src='/assets/_common/js/filters.js'></script>

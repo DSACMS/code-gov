@@ -1,5 +1,3 @@
-const { search } = require("@uswds/uswds");
-
 const createFilterState = (data, targetType) => ({
     originalData: data,
     filteredData: [...data],
@@ -279,3 +277,35 @@ const bindEvents = (state, setState) => {
     }
 };
 
+const initializeFilters = (data, targetType) => {
+    let state = createFilterState(data, targetType);
+    const setState = (newState) => {
+        state = newState;
+    };
+
+    bindEvents(state, setState);
+    updateDisplay(state);
+    updateResultCount(state);
+
+    return {
+        getState: () => state,
+        setState
+    };
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    const filterContainer = document.querySelector('.filters-container');
+    if (filterContainer) {
+        const targetType = filterContainer.dataset.filterTarget;
+        const dataScript = document.querySelector(`script[data-${targetType}]`);
+
+        if (dataScript) {
+            try {
+                const data = JSON.parse(dataScript.textContent);
+                initializeFilters(data, targetType);
+            } catch (error) {
+                console.error('Error parcing data for filters: ', error);
+            }
+        }
+    }
+});
