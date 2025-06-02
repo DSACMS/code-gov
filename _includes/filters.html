@@ -1,0 +1,94 @@
+<div class="filters-container" data-filter-target="{{ filterTarget }}">
+    <form class="usa-form usa-form--large" id="filter-form">
+        <div class="grid-row grid-gap">
+            <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4">
+                <label class="usa-label" for="search-input">Search</label>
+                <input
+                    class="usa-input"
+                    id="search-input"
+                    name="search"
+                    type="search"
+                    placeholder="Search {{ filterTarget }}..."
+                    data-filter-type="search"
+                >
+            </div>
+            <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4">
+                <label class="usa-label" for="select-status">Status</label>
+                <select class="usa-select" id="status-select" name="status" data-filter-type="select">
+                    <option value="">All Statuses</option>
+                    {% for status in codegovData.filters.statuses %}
+                        <option value="{{ status }}">{{ status }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            {% if filterTarget == 'projects' %}
+            <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4">
+                <label class="usa-label" for="category-select">Category</label>
+                <select class="usa-select" id="category-select" name="category" data-filter-type="select">
+                    <option value="">All Categories</option>
+                    {% for category in codegovData.filters.categories %}
+                        <option value="{{ category }}">{{ category }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4">
+                <label class="usa-label" for="language-select">Language</label>
+                <select class="usa-select" id="language-select" name="language" data-filter-type="select">
+                    <option value="">All Languages</option>
+                    {% for language in codegovData.filters.languages %}
+                        <option value="{{ language }}">{{ language }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4">
+                <label class="usa-label" for="platform-select">Language</label>
+                <select class="usa-select" id="platform-select" name="platform" data-filter-type="select">
+                    <option value="">All Platforms</option>
+                    {% for platform in codegovData.filters.platforms %}
+                        <option value="{{ platform }}">{{ platform }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            {% endif %}
+            <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4">
+                <label class="usa-label" for="org-select">Organization</label>
+                <select class="usa-select" id="org-select" name="organization" data-filter-type="select">
+                    <option value="">All Organizations</option>
+                    {% for org in codegovData.filters.organizations %}
+                        <option value="{{ org }}">{{ org }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+        <div class="grid-row grid-gap margin-top-2">
+            <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4">
+                <label class="usa-label" for="sort-select">Sort by</label>
+                <select class="usa-select" id="sort-select" name="sort" data-filter-type="sort">
+                    {% if filterTarget == 'agencies' %}
+                        <option value="name-asc">Name (A-Z)</option>
+                        <option value="name-desc">Name (Z-A)</option>
+                        <option value="projects-asc">Fewest Projects</option>
+                        <option value="projects-desc">Most Projects</option>
+                    {% else %}
+                        <option value="name-asc">Name (A-Z)</option>
+                        <option value="name-desc">Name (Z-A)</option>
+                        <option value="modified-asc">Oldest Modified</option>
+                        <option value="modified-desc">Newest Modified</option>
+                        <option value="created-asc">Oldest Created</option>
+                        <option value="created-desc">Newest Created</option>
+                    {% endif %}
+                </select>
+            </div>
+        </div>
+        <div class="grid-row margin-top-2">
+            <div class="grid-col-auto">
+                <button type="button" class="usa-button usa-button--outline" id="clear-filters">
+                    Clear Filters
+                </button>
+            </div>
+            <div class="grid-col-auto">
+                <span id="results-count" class="usa-hint margin-left-2"></span>
+            </div>
+        </div>
+    </form>
+</div>

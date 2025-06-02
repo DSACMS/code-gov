@@ -13,10 +13,13 @@ sidenav: false
 sticky_sidenav: false
 ---
 
-<script>console.log({{agencies|json}});</script>
+{% include "filters.html", filterTarget: "agencies" %}
+
+<script>console.log({{ codegovData.agencies | json }})</script>
+<script type="application/json" data-agencies>{{ codegovData.agencies | json }}</script>
 
 <div class="agency-grid">
-  {% for agency in agencies %}
+  {% for agency in codegovData.agencies %}
     {% include "agency-card.html" %}
   {% endfor %}
 </div>
