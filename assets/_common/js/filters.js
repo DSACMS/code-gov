@@ -257,3 +257,25 @@ const handleClearFilters = (state, setState) => () => {
     updateDisplay(processedState);
     updateResultCount(processedState);
 };
+
+const bindEvents = (state, setState) => {
+    const searchInput = document.getElementById('search-input');
+    if (searchInput) {
+        searchInput.addEventListener('input', handleSearchInput(state, setState));
+    }
+
+    document.querySelectorAll('[data-filter-type="select"]').forEach(select => {
+        select.addEventListener('change', handleSelectChange(state, setState));
+    });
+
+    const sortSelect = document.getElementById('sort-select');
+    if (sortSelect) {
+        sortSelect.addEventListener('change', handleSortChange(state, setState));
+    }
+
+    const clearButton = document.getElementById('clear-filters');
+    if (clearButton) {
+        clearButton.addEventListener('click', handleClearFilters(state, setState));
+    }
+};
+
