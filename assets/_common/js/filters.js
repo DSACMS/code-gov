@@ -1,3 +1,5 @@
+const { search } = require("@uswds/uswds");
+
 const createFilterState = (data, targetType) => ({
     originalData: data,
     filteredData: [...data],
@@ -197,3 +199,61 @@ const updateResultCount = (state) => {
     }
 };
 
+const handleSearchInput = (state, setState) => debounce((e) => {
+    const newState = {
+        ...state,
+        filters: {
+            ...state.filters,
+            search: e.target.value.toLowerCase()
+        }
+    };
+
+    const processedState = processFilters(newState);
+    setState(processedState);
+    updateDisplay(processedState);
+    updateResultCount(processedState);
+}, 300);
+
+const handleSelectChange = (state, setState) => (e) => {
+    const filterName = e.target.name;
+    const newState = {
+        ...state,
+        filters: {
+            ...state.filters,
+            [filterName]: e.target.value
+        }
+    };
+
+    const processedState = processFilters(newState);
+    setState(processedState);
+    updateDisplay(processedState);
+    updateResultCount(processedState);
+};
+
+const handleSortChange = (state, setState) => (e) => {
+    const newState = {
+        ...state,
+        sortBy: e.target.value
+    };
+
+    const processedState = processFilters(newState);
+    setState(processedState);
+    updateDisplay(processedState);
+    updateResultCount(processedState);
+};
+
+const handleClearFilters = (state, setState) => () => {
+    const clearedState = {
+        ...state,
+        filters: {},
+        sortBy: 'name-asc'
+    };
+
+    document.getElementById('filter-form').reset();
+    document.getElementById('sort-select').value = 'name-asc'
+
+    const processedState = processFilters(clearedState);
+    setState(processedState);
+    updateDisplay(processedState);
+    updateResultCount(processedState);
+};
