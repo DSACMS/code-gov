@@ -11,11 +11,11 @@ eleventyNavigation:
   title: Projects
 sidenav: false
 sticky_sidenav: false
+templateEngineOverride: liquid, html
 ---
 
 {% include "filters.html", filterTarget: "projects" %}
 
-<script>console.log({{ codegovData.projects | json }})</script>
 <script type="application/json" data-projects>{{ codegovData.projects | json }}</script>
 
 <div class="project-grid"></div>
