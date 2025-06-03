@@ -1,7 +1,7 @@
 ---
 title: Agency Liaisons
 description: 'List of agency liaisons'
-permalink: /agencies/agency-liaisons
+permalink: /agencies/agency-liaisons/
 layout: layouts/page
 tags: codegov
 eleventyNavigation:
