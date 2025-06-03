@@ -30,15 +30,49 @@ const applySearchFilter = (data, searchTerm, targetType) => {
     });
 };
 
-const applySelectFilters = (data, filters) => {
+const applySelectFilters = (data, filters, targetType) => {
     return Object.entries(filters).reduce((filtered, [key, value]) => {
         if (!value || key === 'search') return filtered;
 
         return filtered.filter(item => {
-            if (Array.isArray(item[key])) {
-                return item[key].includes(value);
+            if (targetType === 'agencies') {
+                switch (key) {
+                    case 'organization':
+                        return item.organizations && item.organizations.includes(value);
+                    case 'status':
+                        return true;
+                    case 'language':
+                        return true;
+                    case 'category':
+                        return true;
+                    case 'platform':
+                        return true;
+                    default:
+                        if (Array.isArray(item[key])) {
+                            return item[key].includes(value);
+                        }
+                        return item[key] === value;
+                }   
+            } else {
+                let actualKey = key;
+                
+                switch (key) {
+                    case 'language':
+                        actualKey = 'languages'
+                        break;
+                    case 'category':
+                        actualKey = 'categories'
+                        break;
+                    case 'platform':
+                        actualKey = 'platforms'
+                        break;
+                }
+
+                if (Array.isArray(item[actualKey])) {
+                    return item[actualKey].includes(value);
+                }
+                return item[actualKey] === value;
             }
-            return item[key] === value;
         });
     }, data);
 };
@@ -81,7 +115,7 @@ const processFilters = (state) => {
    let filtered = [...state.originalData];
    
    filtered = applySearchFilter(filtered, state.filters.search, state.targetType);
-   filtered = applySelectFilters(filtered, state.filters);
+   filtered = applySelectFilters(filtered, state.filters, state.targetType);
    filtered = sortData(filtered, state.sortBy);
 
    return {
