@@ -1,7 +1,7 @@
 ---
 title: Agency Compliance
 description: 'Guidance'
-permalink: /agency-compliance/compliance/dashboard
+permalink: /agency-compliance/compliance/dashboard/
 layout: layouts/page
 tags: codegov
 eleventyNavigation:
