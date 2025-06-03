@@ -14,7 +14,8 @@ sticky_sidenav: false
 ---
 
 Last Updated: 04/03/2024
-To request an addition or update to agency liaison information, please submit an [agency liaison issue](https://github.com/DSACMS/gov-codejson/issues) to the repository.
+
+To request an addition or update to agency liaison information, please submit an [agency liaison issue](https://github.com/DSACMS/code-gov/issues) to the repository.
 
 |Agency   |Liaison(s)   |Email(s)   |
 |---|---|---|
