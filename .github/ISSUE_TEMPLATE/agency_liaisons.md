@@ -1,7 +1,7 @@
 ---
 name: Add/Update Agency Liaison
 about: Request to add/update the agency liaison list
-title: '[AGENCY] Add Agency Liaison'
+title: '[AGENCY] Add/Update Agency Liaison'
 labels: 'agency-liaison'
 assignees: '@natalialuzuriaga'
 
