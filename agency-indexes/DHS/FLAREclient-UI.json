@@ -1,0 +1,35 @@
+{
+    "contact": {
+        "URL": "https://github.com/cisagov",
+        "email": "do_not_email_just_use_github@dhs.gov"
+    },
+    "date": {
+        "created": "2021-07-27",
+        "lastModified": "2023-07-25"
+    },
+    "description": "Front end JavaScript component of FLAREclient application",
+    "downloadURL": "https://api.github.com/repos/cisagov/FLAREclient-UI/downloads",
+    "homepageURL": "https://github.com/cisagov/FLAREclient-UI",
+    "laborHours": 23352.6,
+    "languages": [
+        "JavaScript",
+        "Smarty",
+        "Shell",
+        "HTML",
+        "CSS",
+        "Dockerfile",
+        "TypeScript"
+    ],
+    "name": "FLAREclient-UI",
+    "organization": "Cybersecurity and Infrastructure Security Agency",
+    "permissions": {
+        "licenses": null,
+        "usageType": "openSource"
+    },
+    "repositoryURL": "https://github.com/cisagov/FLAREclient-UI.git",
+    "status": "Development",
+    "tags": [
+        "github"
+    ],
+    "vcs": "git"
+}

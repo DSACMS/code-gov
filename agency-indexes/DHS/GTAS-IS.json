@@ -1,0 +1,29 @@
+{
+    "contact": {
+        "URL": "https://github.com/US-CBP",
+        "email": "do_not_email_just_use_github@dhs.gov"
+    },
+    "date": {
+        "created": "2020-06-24",
+        "lastModified": "2020-06-29"
+    },
+    "description": "Assist data information sharing to and from GTAS",
+    "downloadURL": "https://api.github.com/repos/US-CBP/GTAS-IS/downloads",
+    "homepageURL": "https://github.com/US-CBP/GTAS-IS",
+    "laborHours": 554.1,
+    "languages": [
+        "Java"
+    ],
+    "name": "GTAS-IS",
+    "organization": "U.S. Customs and Border Protection",
+    "permissions": {
+        "licenses": null,
+        "usageType": "openSource"
+    },
+    "repositoryURL": "https://github.com/US-CBP/GTAS-IS.git",
+    "status": "Development",
+    "tags": [
+        "github"
+    ],
+    "vcs": "git"
+}

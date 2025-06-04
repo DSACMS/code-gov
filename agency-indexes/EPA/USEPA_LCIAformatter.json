@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/LCIAformatter",
+    "organization": "usepa",
+    "description": "",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/LCIAformatter/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/LCIAformatter",
+    "downloadURL": "https://github.com/USEPA/LCIAformatter/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/LCIAformatter/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/LCIAformatter.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2019-05-22T13:55:50Z",
+        "lastModified": "2025-05-21T16:51:19Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.100Z"
+    }
+}

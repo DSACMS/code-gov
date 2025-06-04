@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/WATERSGeoViewer",
+    "organization": "usepa",
+    "description": "Source Code for the EPA WATERS GeoViewer",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/WATERSGeoViewer/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/WATERSGeoViewer",
+    "downloadURL": "https://github.com/USEPA/WATERSGeoViewer/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/WATERSGeoViewer/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/WATERSGeoViewer.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2025-05-15T10:17:22Z",
+        "lastModified": "2025-05-15T12:44:36Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.387Z"
+    }
+}

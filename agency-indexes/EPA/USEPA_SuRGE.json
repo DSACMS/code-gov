@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/SuRGE",
+    "organization": "usepa",
+    "description": "",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/SuRGE/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/SuRGE",
+    "downloadURL": "https://github.com/USEPA/SuRGE/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/SuRGE/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/SuRGE.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2017-03-21T21:19:59Z",
+        "lastModified": "2025-06-03T19:58:35Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.069Z"
+    }
+}

@@ -1,0 +1,54 @@
+{
+    "contact": {
+        "URL": "https://github.com/cisagov",
+        "email": "do_not_email_just_use_github@dhs.gov"
+    },
+    "date": {
+        "created": "2020-07-24",
+        "lastModified": "2025-03-17"
+    },
+    "description": "President's Cup Cybersecurity Competition Challenges",
+    "downloadURL": "https://api.github.com/repos/cisagov/prescup-challenges/downloads",
+    "homepageURL": "https://github.com/cisagov/prescup-challenges",
+    "laborHours": 2810528.7,
+    "languages": [
+        "PLpgSQL",
+        "HTML",
+        "Python",
+        "C#",
+        "TeX",
+        "Shell",
+        "Rust",
+        "PHP",
+        "C",
+        "Roff",
+        "C++",
+        "CSS",
+        "Java",
+        "PowerShell",
+        "JavaScript",
+        "Clojure",
+        "Batchfile",
+        "Makefile",
+        "HCL",
+        "Go",
+        "Dockerfile",
+        "Hack"
+    ],
+    "name": "prescup-challenges",
+    "organization": "Cybersecurity and Infrastructure Security Agency",
+    "permissions": {
+        "licenses": [
+            {
+                "name": "NOASSERTION"
+            }
+        ],
+        "usageType": "openSource"
+    },
+    "repositoryURL": "https://github.com/cisagov/prescup-challenges.git",
+    "status": "Development",
+    "tags": [
+        "github"
+    ],
+    "vcs": "git"
+}

@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/CompTox-httrpl",
+    "organization": "usepa",
+    "description": "High-throughput transcriptomics pipeline (httrpl)",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/CompTox-httrpl/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/CompTox-httrpl",
+    "downloadURL": "https://github.com/USEPA/CompTox-httrpl/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/CompTox-httrpl/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/CompTox-httrpl.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2024-04-09T13:24:39Z",
+        "lastModified": "2025-04-17T14:59:46Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.230Z"
+    }
+}

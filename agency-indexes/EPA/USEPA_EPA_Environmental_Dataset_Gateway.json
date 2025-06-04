@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/EPA_Environmental_Dataset_Gateway",
+    "organization": "usepa",
+    "description": "DEPRECATED U.S. EPA\u2019s Metadata Catalog",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/EPA_Environmental_Dataset_Gateway/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/EPA_Environmental_Dataset_Gateway",
+    "downloadURL": "https://github.com/USEPA/EPA_Environmental_Dataset_Gateway/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/EPA_Environmental_Dataset_Gateway/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/EPA_Environmental_Dataset_Gateway.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2017-07-26T19:49:10Z",
+        "lastModified": "2025-02-13T18:00:03Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.075Z"
+    }
+}

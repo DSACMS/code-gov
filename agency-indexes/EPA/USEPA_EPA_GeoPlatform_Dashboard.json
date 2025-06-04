@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/EPA_GeoPlatform_Dashboard",
+    "organization": "usepa",
+    "description": "",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/EPA_GeoPlatform_Dashboard/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/EPA_GeoPlatform_Dashboard",
+    "downloadURL": "https://github.com/USEPA/EPA_GeoPlatform_Dashboard/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/EPA_GeoPlatform_Dashboard/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/EPA_GeoPlatform_Dashboard.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2017-07-31T11:14:41Z",
+        "lastModified": "2017-10-27T22:24:34Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.075Z"
+    }
+}

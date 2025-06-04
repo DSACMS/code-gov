@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/power-sector-dev-portal",
+    "organization": "usepa",
+    "description": "",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/power-sector-dev-portal/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/power-sector-dev-portal",
+    "downloadURL": "https://github.com/USEPA/power-sector-dev-portal/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/power-sector-dev-portal/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/power-sector-dev-portal.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2024-10-09T20:21:50Z",
+        "lastModified": "2025-05-09T14:48:23Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.243Z"
+    }
+}

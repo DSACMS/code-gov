@@ -1,0 +1,37 @@
+{
+    "contact": {
+        "URL": "https://github.com/US-CBP",
+        "email": "do_not_email_just_use_github@dhs.gov"
+    },
+    "date": {
+        "created": "2016-10-20",
+        "lastModified": "2018-04-06"
+    },
+    "description": "A quick start application to use the ng2-cbp-cf library",
+    "downloadURL": "https://api.github.com/repos/US-CBP/ng2-cbp-quickStart/downloads",
+    "homepageURL": "https://github.com/US-CBP/ng2-cbp-quickStart",
+    "laborHours": 3296.9,
+    "languages": [
+        "TypeScript",
+        "HTML",
+        "JavaScript",
+        "CSS"
+    ],
+    "name": "ng2-cbp-quickStart",
+    "organization": "U.S. Customs and Border Protection",
+    "permissions": {
+        "licenses": [
+            {
+                "URL": "https://api.github.com/licenses/mit",
+                "name": "MIT"
+            }
+        ],
+        "usageType": "openSource"
+    },
+    "repositoryURL": "https://github.com/US-CBP/ng2-cbp-quickStart.git",
+    "status": "Development",
+    "tags": [
+        "github"
+    ],
+    "vcs": "git"
+}

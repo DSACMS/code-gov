@@ -1,0 +1,27 @@
+{
+    "contact": {
+        "URL": "https://github.com/US-CBP",
+        "email": "do_not_email_just_use_github@dhs.gov"
+    },
+    "date": {
+        "created": "2023-09-25",
+        "lastModified": "2024-12-09"
+    },
+    "description": "CBP Design System - for Designers",
+    "downloadURL": "https://api.github.com/repos/US-CBP/cbp-ds-for-designers/downloads",
+    "homepageURL": "https://github.com/US-CBP/cbp-ds-for-designers",
+    "laborHours": 42.2,
+    "languages": [],
+    "name": "cbp-ds-for-designers",
+    "organization": "U.S. Customs and Border Protection",
+    "permissions": {
+        "licenses": null,
+        "usageType": "openSource"
+    },
+    "repositoryURL": "https://github.com/US-CBP/cbp-ds-for-designers.git",
+    "status": "Development",
+    "tags": [
+        "github"
+    ],
+    "vcs": "git"
+}

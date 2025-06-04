@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/expert-query",
+    "organization": "usepa",
+    "description": "Expert Query provides the public, EPA, state, and tribal users the ability to download detailed ATTAINS data.",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/expert-query/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/expert-query",
+    "downloadURL": "https://github.com/USEPA/expert-query/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/expert-query/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/expert-query.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2022-10-11T17:03:23Z",
+        "lastModified": "2025-02-07T15:42:16Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.189Z"
+    }
+}
