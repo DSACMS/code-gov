@@ -21,4 +21,5 @@ templateEngineOverride: liquid, html
     <div class="project-grid"></div>
 </div>
 
-<script src='/assets/_common/js/filters.js'></script>
+<!-- <script src='/assets/_common/js/filters.js'></script> -->
+<script src='{{ assetPaths["filters.js"] }}'></script>

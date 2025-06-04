@@ -31,8 +31,9 @@ module.exports = function (config) {
   config.addPassthroughCopy({'./node_modules/@uswds/uswds/dist/js/uswds-init.js': 'assets/js/uswds-init.js'});
 
   // Specific scripts to guides
-  config.addPassthroughCopy("./assets/_common/js/*");
   config.addPassthroughCopy("./assets/**/js/*");
+  config.addPassthroughCopy("./assets/_common/js/*");
+  config.addPassthroughCopy("./assets/_common/js/filters.js");
 
   config.addPassthroughCopy({'./assets/_common/_img/favicons/favicon.ico': './favicon.ico' });
   config.addPassthroughCopy({'./assets/_common/_img/favicons': './img/favicons' });
