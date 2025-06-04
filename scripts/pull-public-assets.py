@@ -41,7 +41,7 @@ def main():
                 org = org.strip()
                 indexGen.process_organization(org,add_to_index=True,codeJSONPath=agency_subdir)
 
-            indexGen.save_index(os.path.join(AGENCY_CODEJSON_DIR, agency + "_index.json"))
+            indexGen.save_index(os.path.join(AGENCY_CODEJSON_DIR, agency + "-index.json"))
             print(f"\nIndexing complete. Results saved to {AGENCY_CODEJSON_DIR}")
         
     except Exception as e:
