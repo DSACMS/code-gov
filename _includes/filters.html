@@ -1,7 +1,7 @@
 <div class="filters-container" data-filter-target="{{ filterTarget }}">
     <form class="usa-form usa-form--large" id="filter-form">
-        <div class="grid-row grid-gap">
-            <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4">
+        <div class="filter-inputs grid-col grid-gap">
+            <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-10">
                 <label class="usa-label" for="search-input">Search</label>
                 <input
                     class="usa-input"
@@ -12,7 +12,7 @@
                     data-filter-type="search"
                 >
             </div>
-            <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4">
+            <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-10">
                 <label class="usa-label" for="select-status">Status</label>
                 <select class="usa-select" id="status-select" name="status" data-filter-type="select">
                     <option value="">All Statuses</option>
@@ -21,8 +21,17 @@
                     {% endfor %}
                 </select>
             </div>
+            <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-10">
+                <label class="usa-label" for="agency-status">Federal Agency</label>
+                <select class="usa-select" id="agency-select" name="agency" data-filter-type="select">
+                    <option value="">All Agencies</option>
+                    {% for agency in codegovData.agencies %}
+                        <option value="{{ agency.name }}">{{ agency.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
             {% if filterTarget == 'projects' %}
-            <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4">
+            <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-10">
                 <label class="usa-label" for="category-select">Category</label>
                 <select class="usa-select" id="category-select" name="category" data-filter-type="select">
                     <option value="">All Categories</option>
@@ -31,7 +40,7 @@
                     {% endfor %}
                 </select>
             </div>
-            <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4">
+            <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-10">
                 <label class="usa-label" for="language-select">Language</label>
                 <select class="usa-select" id="language-select" name="language" data-filter-type="select">
                     <option value="">All Languages</option>
@@ -40,7 +49,7 @@
                     {% endfor %}
                 </select>
             </div>
-            <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4">
+            <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-10">
                 <label class="usa-label" for="platform-select">Platform</label>
                 <select class="usa-select" id="platform-select" name="platform" data-filter-type="select">
                     <option value="">All Platforms</option>
@@ -50,7 +59,7 @@
                 </select>
             </div>
             {% endif %}
-            <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4">
+            <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-10">
                 <label class="usa-label" for="org-select">Organization</label>
                 <select class="usa-select" id="org-select" name="organization" data-filter-type="select">
                     <option value="">All Organizations</option>
@@ -60,8 +69,8 @@
                 </select>
             </div>
         </div>
-        <div class="grid-row grid-gap margin-top-2">
-            <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4">
+        <div class="filter-inputs">
+            <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-10">
                 <label class="usa-label" for="sort-select">Sort by</label>
                 <select class="usa-select" id="sort-select" name="sort" data-filter-type="sort">
                     {% if filterTarget == 'agencies' %}
@@ -82,7 +91,7 @@
         </div>
         <div class="grid-row margin-top-2">
             <div class="grid-col-auto">
-                <button type="button" class="usa-button usa-button--outline" id="clear-filters">
+                <button type="button" class="filter-clear-button usa-button usa-button--outline margin-left-4" id="clear-filters">
                     Clear Filters
                 </button>
             </div>

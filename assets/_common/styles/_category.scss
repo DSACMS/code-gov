@@ -139,8 +139,6 @@
   }
 }
 
-
-
 @media screen and (max-width: 600px) {
   .layout--introduction {
     .section {
@@ -152,5 +150,37 @@
         padding-left: 0;
       }
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-and-filter-container {
+    display: flex;
+    width: 100vw;
+  }
+
+  .filters-container {
+    height: fit-content;
+    background-color: #e1f3f8;
+    border: .5px solid #565c65;
+  }
+
+  .filter-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .agency-card,
+  .project-card {
+    margin: 0 1em 1em;
+  }
+
+  #search-input {
+    border: 1px solid #565c65;
+  }
+
+  .filter-clear-button {
+    background-color: #fff;
   }
 }

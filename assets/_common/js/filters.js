@@ -39,6 +39,8 @@ const applySelectFilters = (data, filters, targetType) => {
                 switch (key) {
                     case 'organization':
                         return item.organizations && item.organizations.includes(value);
+                    case 'agency':
+                        return item.name === value;
                     case 'status':
                         return true;
                     case 'language':
@@ -65,6 +67,9 @@ const applySelectFilters = (data, filters, targetType) => {
                         break;
                     case 'platform':
                         actualKey = 'platforms'
+                        break;
+                    case 'agency':
+                        actualKey = 'agencyName'
                         break;
                 }
 
