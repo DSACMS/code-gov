@@ -1,4 +1,4 @@
-const codegov = require('../codegov.json');
+const codegov = require('../codegov.json/');
 
 module.exports = function() {
     const agencies = [];
