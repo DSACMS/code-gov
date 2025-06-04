@@ -21,4 +21,4 @@ templateEngineOverride: liquid, html
     <div class="project-grid"></div>
 </div>
 
-<script src='/assets/_common/js/filters.js'></script>
+<script src='code-gov/assets/_common/js/filters.js'></script>
