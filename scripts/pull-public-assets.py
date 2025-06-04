@@ -45,9 +45,16 @@ def main():
                 for id,repo in enumerate(codegovDict[agency],1):
                     print(f"\nChecking {repo} [{id}/{len(codegovDict[agency])}]")
 
-                    repoPath = os.path.join(agency_subdir, (repo + '.json'))
-                    repo_obj = indexGen.github.get_repo(repo.split("github.com/")[1])
-                    code_json = indexGen.save_code_json(repo_obj)
+                    print(repo.split("github.com/")[1])
+                    try:
+                        repo_obj = indexGen.github.get_repo(repo.split("github.com/")[1])
+                        
+                    except:
+                        print("Could not retrieve Repo with API query")
+                        continue
+
+                    repoPath = os.path.join(agency_subdir, (repo_obj.name + '.json'))
+                    code_json = indexGen.save_code_json(repo_obj,repoPath)
 
                     if code_json:
                         print(f"✅ Found code.json in {repo}")
