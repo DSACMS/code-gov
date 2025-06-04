@@ -8,6 +8,7 @@ const CONFIG = {
     githubToken: process.env.GITHUB_TOKEN
 }
 
+// #region - Helper Functions
 const getHeaders = () => {
     const HEADERS = {
         'Accept': 'application/vnd.github.v3+json',
@@ -17,12 +18,11 @@ const getHeaders = () => {
     return HEADERS
 }
 
-// MARK - Helper Functions
-async function getRepoInfo() { // dont know how i feel about this triple loop setup... - PUL4
+async function getRepoInfo() { // dont know how i feel about this double loop setup...
     let repoInfo = []
 
     try {
-        const content = await fs.readFile(CONFIG.repoFilePath, "utf-8")
+        const content = await fs.readFile(CONFIG.repoFilePath, "utf-8") // filter by tier 3 maturity to get the projects that truly want outside help 
         const jsonData = JSON.parse(content)
 
         for (const agencyKey in jsonData) {
@@ -106,13 +106,13 @@ function transformIssue(issue, repo, repoLanguage) {
     }
 }
 
-// MARK - Main Function
+// #region - Main Function
 async function updateIssuePool() {
     const issuePool = {}
     const repoInfo = await getRepoInfo()
     const headers = getHeaders()
 
-    for (let i = 0; i < repoInfo.length; i++) {
+    for (let i = 0; i < repoInfo.length; i++) { // switch to a forOf loop here?
         const repo = repoInfo[i]
 
         try {
@@ -131,7 +131,7 @@ async function updateIssuePool() {
             let hasMore = true
 
             while (hasMore) {
-                const issuesUrl = `https://api.github.com/repos/${repo.ownerName}/${repo.repoName}/issues?page=${page}&per_page=100&state=open`
+                const issuesUrl = `https://api.github.com/repos/${repo.ownerName}/${repo.repoName}/issues?page=${page}&per_page=100&state=open` // read from specific opt in labels
                 const issuesResponse = await fetch(issuesUrl, { headers })
 
                 if (!issuesResponse.ok) {
@@ -145,13 +145,14 @@ async function updateIssuePool() {
                     hasMore = false
                 }
 
+                // endpoint always returns both issues and pull requests so we ignore the PRs
                 for (const issue of issues) {
                     if (issue.pull_request) {
                         continue
                     }
 
                     const transformedIssue = transformIssue(issue, repo, repoLanguage)
-                    issuePool[transformedIssue.id] = transformedIssue
+                    issuePool[transformedIssue.id] = transformedIssue // is having the ID is the best key name?
                 }
 
                 page++
