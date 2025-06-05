@@ -1,0 +1,31 @@
+{
+    "contact": {
+        "URL": "https://github.com/US-CBP",
+        "email": "do_not_email_just_use_github@dhs.gov"
+    },
+    "date": {
+        "created": "2020-04-10",
+        "lastModified": "2020-04-10"
+    },
+    "description": "No description available...",
+    "downloadURL": "https://api.github.com/repos/US-CBP/base-images/downloads",
+    "homepageURL": "https://github.com/US-CBP/base-images",
+    "laborHours": 201.7,
+    "languages": [
+        "Shell",
+        "Dockerfile",
+        "Go"
+    ],
+    "name": "base-images",
+    "organization": "U.S. Customs and Border Protection",
+    "permissions": {
+        "licenses": null,
+        "usageType": "openSource"
+    },
+    "repositoryURL": "https://github.com/US-CBP/base-images.git",
+    "status": "Development",
+    "tags": [
+        "github"
+    ],
+    "vcs": "git"
+}

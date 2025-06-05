@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/ejscreen-traffic-proximity-processing",
+    "organization": "usepa",
+    "description": "DEPRECATED - This repository is no longer being maintained and is available for reuse.",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/ejscreen-traffic-proximity-processing/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/ejscreen-traffic-proximity-processing",
+    "downloadURL": "https://github.com/USEPA/ejscreen-traffic-proximity-processing/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/ejscreen-traffic-proximity-processing/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/ejscreen-traffic-proximity-processing.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2023-12-14T19:23:53Z",
+        "lastModified": "2024-01-02T17:19:36Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.218Z"
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/Trade-off_Tool_for_Sampling",
+    "organization": "usepa",
+    "description": "Helps develop sampling strategy for field collection of chemical and radiological contaminiation",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/Trade-off_Tool_for_Sampling/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/Trade-off_Tool_for_Sampling",
+    "downloadURL": "https://github.com/USEPA/Trade-off_Tool_for_Sampling/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/Trade-off_Tool_for_Sampling/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/Trade-off_Tool_for_Sampling.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2021-03-01T15:51:44Z",
+        "lastModified": "2025-02-07T15:48:02Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.144Z"
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/BMDS",
+    "organization": "usepa",
+    "description": "U.S EPA Benchmark Dose Modeling Software  (BMDS)",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/BMDS/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/BMDS",
+    "downloadURL": "https://github.com/USEPA/BMDS/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/BMDS/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/BMDS.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2022-04-20T20:26:07Z",
+        "lastModified": "2025-05-27T20:16:51Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.176Z"
+    }
+}

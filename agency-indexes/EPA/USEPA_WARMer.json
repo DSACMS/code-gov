@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/WARMer",
+    "organization": "usepa",
+    "description": "Python package to process the USEPA Waste Reduction Model (WARM) to make the data available in tabular and matrix formats.",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/WARMer/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/WARMer",
+    "downloadURL": "https://github.com/USEPA/WARMer/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/WARMer/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/WARMer.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2021-10-14T17:47:20Z",
+        "lastModified": "2023-12-04T14:01:32Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.161Z"
+    }
+}

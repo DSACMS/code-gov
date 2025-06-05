@@ -1,0 +1,31 @@
+{
+    "contact": {
+        "URL": "https://github.com/US-CBP",
+        "email": "do_not_email_just_use_github@dhs.gov"
+    },
+    "date": {
+        "created": "2016-07-06",
+        "lastModified": "2020-03-09"
+    },
+    "description": "This repository contains the official Open Source Policy of U.S. Customs and Border Protection",
+    "downloadURL": "https://api.github.com/repos/US-CBP/open-source-policy/downloads",
+    "homepageURL": "https://github.com/US-CBP/open-source-policy",
+    "laborHours": 49.4,
+    "languages": [],
+    "name": "open-source-policy",
+    "organization": "U.S. Customs and Border Protection",
+    "permissions": {
+        "licenses": [
+            {
+                "name": "NOASSERTION"
+            }
+        ],
+        "usageType": "openSource"
+    },
+    "repositoryURL": "https://github.com/US-CBP/open-source-policy.git",
+    "status": "Development",
+    "tags": [
+        "github"
+    ],
+    "vcs": "git"
+}

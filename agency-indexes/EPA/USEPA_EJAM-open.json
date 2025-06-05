@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/EJAM-open",
+    "organization": "usepa",
+    "description": "Package for summarizing environmental and residential population information for multiple locations",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/EJAM-open/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/EJAM-open",
+    "downloadURL": "https://github.com/USEPA/EJAM-open/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/EJAM-open/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/EJAM-open.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2024-12-22T19:15:44Z",
+        "lastModified": "2025-05-23T20:43:03Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.246Z"
+    }
+}

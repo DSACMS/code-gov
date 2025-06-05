@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/cam-api-examples",
+    "organization": "usepa",
+    "description": "",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/cam-api-examples/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/cam-api-examples",
+    "downloadURL": "https://github.com/USEPA/cam-api-examples/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/cam-api-examples/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/cam-api-examples.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2022-06-27T13:10:44Z",
+        "lastModified": "2023-11-27T21:49:32Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.182Z"
+    }
+}

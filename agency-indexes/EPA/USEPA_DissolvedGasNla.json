@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/DissolvedGasNla",
+    "organization": "usepa",
+    "description": "",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/DissolvedGasNla/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/DissolvedGasNla",
+    "downloadURL": "https://github.com/USEPA/DissolvedGasNla/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/DissolvedGasNla/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/DissolvedGasNla.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2019-10-17T20:38:02Z",
+        "lastModified": "2025-04-07T13:45:52Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.111Z"
+    }
+}

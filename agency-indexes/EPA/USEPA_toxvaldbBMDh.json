@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/toxvaldbBMDh",
+    "organization": "usepa",
+    "description": "This package extracts data from the ToxValDB database and calculates study-level and chemical-level BMD.",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/toxvaldbBMDh/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/toxvaldbBMDh",
+    "downloadURL": "https://github.com/USEPA/toxvaldbBMDh/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/toxvaldbBMDh/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/toxvaldbBMDh.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2024-05-28T18:23:05Z",
+        "lastModified": "2025-05-13T15:51:54Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.234Z"
+    }
+}

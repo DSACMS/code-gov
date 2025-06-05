@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/CompTox-ExpoCast-invivoPKfit",
+    "organization": "usepa",
+    "description": "",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/CompTox-ExpoCast-invivoPKfit/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/CompTox-ExpoCast-invivoPKfit",
+    "downloadURL": "https://github.com/USEPA/CompTox-ExpoCast-invivoPKfit/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/CompTox-ExpoCast-invivoPKfit/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/CompTox-ExpoCast-invivoPKfit.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2018-03-26T18:16:06Z",
+        "lastModified": "2025-01-13T22:45:32Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.088Z"
+    }
+}

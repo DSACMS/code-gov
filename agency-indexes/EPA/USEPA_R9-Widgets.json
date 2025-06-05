@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/R9-Widgets",
+    "organization": "usepa",
+    "description": "Shareable R9 widgets",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/R9-Widgets/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/R9-Widgets",
+    "downloadURL": "https://github.com/USEPA/R9-Widgets/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/R9-Widgets/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/R9-Widgets.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2016-08-18T21:40:49Z",
+        "lastModified": "2025-03-07T19:40:54Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.059Z"
+    }
+}

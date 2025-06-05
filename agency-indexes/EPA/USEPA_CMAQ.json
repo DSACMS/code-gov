@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/CMAQ",
+    "organization": "usepa",
+    "description": "Code for U.S. EPA\u2019s Community Multiscale Air Quality Model (CMAQ) for estimating ozone, particulates, toxices, and deposition of acids and nutrients at neighborhood to global scales.",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/CMAQ/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/CMAQ",
+    "downloadURL": "https://github.com/USEPA/CMAQ/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/CMAQ/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/CMAQ.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2016-09-06T13:36:41Z",
+        "lastModified": "2025-05-28T18:01:14Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.060Z"
+    }
+}

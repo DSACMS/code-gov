@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/ccte-sbom-generator-java",
+    "organization": "usepa",
+    "description": "",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/ccte-sbom-generator-java/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/ccte-sbom-generator-java",
+    "downloadURL": "https://github.com/USEPA/ccte-sbom-generator-java/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/ccte-sbom-generator-java/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/ccte-sbom-generator-java.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2025-03-05T18:58:09Z",
+        "lastModified": "2025-04-23T15:08:12Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.325Z"
+    }
+}

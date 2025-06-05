@@ -1,0 +1,31 @@
+{
+    "contact": {
+        "email": "david.long@pnnl.gov"
+    },
+    "date": {
+        "created": "2019-04-15",
+        "metadataLastUpdated": "2024-06-18"
+    },
+    "description": "HATS\u00a0allows\u00a0partner\u00a0countries\u00a0to\u00a0collect\u00a0data\u00a0on\u00a0all\u00a0of\u00a0their\u00a0handheld\u00a0radiation\u00a0detectors.\u00a0The\u00a0DataViewer\u00a0then\u00a0allows\u00a0them to\u00a0get\u00a0summaries\u00a0of\u00a0how\u00a0all\u00a0the\u00a0devices\u00a0are\u00a0performing\u00a0over\u00a0time,\u00a0pick\u00a0outliers\u00a0in\u00a0performance\u00a0so\u00a0they\u00a0can\u00a0be\u00a0fixed,\u00a0trend how\u00a0individual\u00a0devices\u00a0perform\u00a0over\u00a0time,\u00a0and\u00a0provide\u00a0reports\u00a0on\u00a0the\u00a0state\u00a0of\u00a0health\u00a0of\u00a0devices\u00a0they\u00a0service. The\u00a0application\u00a0is\u00a0intended\u00a0to\u00a0be\u00a0for\u00a0maintenance\u00a0providers\u00a0and\u00a0partner\u00a0countries\u00a0involved\u00a0in\u00a0the\u00a0NSDD\u00a0program.\u00a0It\u00a0is\u00a0not clear\u00a0if\u00a0other\u00a0entities\u00a0use\u00a0multiple\u00a0detectors\u00a0or\u00a0require\u00a0trending\u00a0of\u00a0a\u00a0single\u00a0detector\u00a0type.",
+    "homepageURL": "https://availabletechnologies.pnnl.gov/default.aspx",
+    "laborHours": 0.0,
+    "languages": [],
+    "name": "Handheld Assessment Tool - Data Viewers (HATS)",
+    "organization": "Pacific Northwest National Laboratory (PNNL)",
+    "permissions": {
+        "exemptionText": "This source code is restricted by patent and / or intellectual property law.",
+        "licenses": [
+            {
+                "URL": "https://availabletechnologies.pnnl.gov/default.aspx",
+                "name": "Other"
+            }
+        ],
+        "usageType": "exemptByLaw"
+    },
+    "repositoryURL": "https://availabletechnologies.pnnl.gov/default.aspx",
+    "status": "Development",
+    "tags": [
+        "DOE CODE",
+        "Pacific Northwest National Laboratory (PNNL)"
+    ]
+}

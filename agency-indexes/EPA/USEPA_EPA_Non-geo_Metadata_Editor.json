@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/EPA_Non-geo_Metadata_Editor",
+    "organization": "usepa",
+    "description": "",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/EPA_Non-geo_Metadata_Editor/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/EPA_Non-geo_Metadata_Editor",
+    "downloadURL": "https://github.com/USEPA/EPA_Non-geo_Metadata_Editor/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/EPA_Non-geo_Metadata_Editor/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/EPA_Non-geo_Metadata_Editor.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2018-10-01T14:08:33Z",
+        "lastModified": "2025-04-29T21:52:58Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.096Z"
+    }
+}

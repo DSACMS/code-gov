@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/missing.data.in.ecology",
+    "organization": "usepa",
+    "description": "Repository for \"Missing data in ecology: Some synthesis, clarifications, and recommendations\"",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/missing.data.in.ecology/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/missing.data.in.ecology",
+    "downloadURL": "https://github.com/USEPA/missing.data.in.ecology/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/missing.data.in.ecology/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/missing.data.in.ecology.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2025-03-05T20:51:32Z",
+        "lastModified": "2025-06-04T00:07:12Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.319Z"
+    }
+}

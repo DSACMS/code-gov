@@ -1,0 +1,32 @@
+{
+    "contact": {
+        "URL": "https://github.com/usdhs",
+        "email": "do_not_email_just_use_github@dhs.gov"
+    },
+    "date": {
+        "created": "2021-10-01",
+        "lastModified": "2024-09-05"
+    },
+    "description": "No description available...",
+    "downloadURL": "https://api.github.com/repos/usdhs/dcat-tool/downloads",
+    "homepageURL": "https://github.com/usdhs/dcat-tool",
+    "laborHours": 2774.3,
+    "languages": [
+        "Python",
+        "HTML",
+        "CSS",
+        "Makefile"
+    ],
+    "name": "dcat-tool",
+    "organization": "U.S. Department of Homeland Security",
+    "permissions": {
+        "licenses": null,
+        "usageType": "openSource"
+    },
+    "repositoryURL": "https://github.com/usdhs/dcat-tool.git",
+    "status": "Development",
+    "tags": [
+        "github"
+    ],
+    "vcs": "git"
+}

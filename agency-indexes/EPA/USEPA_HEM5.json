@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/HEM5",
+    "organization": "usepa",
+    "description": "Estimate ambient concentrations, human exposures and health risks that may result from air pollution emissions from complex industrial facilities. The code for versions 4.1 and 4.2 can be checked out via the v4.1 and v4.2 tags.",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/HEM5/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/HEM5",
+    "downloadURL": "https://github.com/USEPA/HEM5/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/HEM5/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/HEM5.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2025-05-14T19:10:22Z",
+        "lastModified": "2025-05-14T23:39:29Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.349Z"
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/TEVA-SPOT-Toolkit",
+    "organization": "usepa",
+    "description": "",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/TEVA-SPOT-Toolkit/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/TEVA-SPOT-Toolkit",
+    "downloadURL": "https://github.com/USEPA/TEVA-SPOT-Toolkit/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/TEVA-SPOT-Toolkit/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/TEVA-SPOT-Toolkit.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2019-06-10T15:37:51Z",
+        "lastModified": "2019-07-24T21:27:32Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.102Z"
+    }
+}

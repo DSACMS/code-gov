@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/Air-Sensor-Network-Analysis-Tool-Public-",
+    "organization": "usepa",
+    "description": "A tool to understand air sensor performance compared to nearby air monitors and to understand local air quality.",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/Air-Sensor-Network-Analysis-Tool-Public-/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/Air-Sensor-Network-Analysis-Tool-Public-",
+    "downloadURL": "https://github.com/USEPA/Air-Sensor-Network-Analysis-Tool-Public-/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/Air-Sensor-Network-Analysis-Tool-Public-/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/Air-Sensor-Network-Analysis-Tool-Public-.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2025-03-11T14:22:25Z",
+        "lastModified": "2025-05-12T19:19:34Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.319Z"
+    }
+}
