@@ -1,5 +1,6 @@
 import json
 from datetime import datetime
+from dateutil.parser import parse
 
 def merge_indexes(data,existing_file):
     try:
@@ -32,10 +33,10 @@ def merge_indexes(data,existing_file):
 
 def which_code_json_is_most_up_to_date(*args):
 
+
     sorted_code_json_list = sorted(
         args,
-        key=lambda d : datetime.strptime(
-            d['date']['metadataLastUpdated'],'%Y-%m-%d'
-            ),
+        key=lambda d : parse(
+            d['date']['metadataLastUpdated']),
         reverse=True)
     return sorted_code_json_list[0]
