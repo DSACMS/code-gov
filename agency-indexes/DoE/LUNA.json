@@ -1,17 +1,19 @@
 {
     "contact": {
-        "email": "chan@lanl.gov"
+        "email": "copyrightadmin@sandia.gov"
     },
     "date": {
-        "created": "2021-06-17",
-        "metadataLastUpdated": "2021-06-17"
+        "created": "2022-10-05",
+        "metadataLastUpdated": "2022-10-05"
     },
-    "description": "We have developed a mechanistic model of leaf utilization of nitrogen for assimilation (LUNA V1.0) to predict the photosynthetic capacity at the global scale under different environmental conditions. We adopt an optimality hypothesis to nitrogen allocation among light capture, electron transport, carboxylation, and respiration. The LUNA model is able to reasonably capture the measured spatial and temporal patterns of the photosynthetic capacity as it explains ~55% of the global variation in the observed values of  maximum carboxylation rate (Vc,max25) and ~65% of the variation in the observed values of  maximum electron transport rate (Jmax25).",
-    "homepageURL": "https://www.lanl.gov/projects/feynman-center/deploying-innovation/intellectual-property/software-tools/open-source-software.php",
+    "description": "SAND2021-15051 O\nLuna is an experimental cognitive architecture that seeks to enable continuous learning in an embodied agent. Sandia National Laboratories is a multimission laboratory managed and operated by National Technology & Engineering Solutions of Sandia, LLC, a wholly owned subsidiary of Honeywell International Inc., for the U.S. Department of Energy\u2019s National Nuclear Security Administration under contract DE-NA0003525.",
+    "homepageURL": "https://ip.sandia.gov/contact-form",
     "laborHours": 0.0,
-    "languages": [],
-    "name": "LUNA",
-    "organization": "Los Alamos National Laboratory (LANL)",
+    "languages": [
+        "Python3"
+    ],
+    "name": "Luna",
+    "organization": "Sandia National Laboratories (SNL)",
     "permissions": {
         "exemptionText": null,
         "licenses": [
@@ -22,10 +24,11 @@
         ],
         "usageType": "openSource"
     },
-    "repositoryURL": "https://www.lanl.gov/projects/feynman-center/deploying-innovation/intellectual-property/software-tools/open-source-software.php",
+    "repositoryURL": "https://ip.sandia.gov/contact-form",
     "status": "Development",
     "tags": [
         "DOE CODE",
-        "Los Alamos National Laboratory (LANL)"
-    ]
+        "Sandia National Laboratories (SNL)"
+    ],
+    "version": "0.1"
 }

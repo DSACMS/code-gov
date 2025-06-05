@@ -1,7 +1,7 @@
 import requests
 import json
 import os
-from util import merge_indexes
+from util import merge_indexes, which_code_json_is_most_up_to_date
 
 # the commented out links are not valid or cant be found
 agencies_links = {
@@ -50,8 +50,13 @@ def add_directories_to_directory(data, agency_name):
             safe_name = item['name'].replace('/', '_').replace('(', '_').replace(')', '_').replace(' ', '_')
             file_path = os.path.join(directory_name, f"{safe_name}.json")
 
+            if os.path.exists(file_path):
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    existing_code_json = json.load(f)
+                
+
             with open(file_path, 'w', encoding='utf-8') as file:
-                json.dump(item, file, indent = 4)
+                json.dump(which_code_json_is_most_up_to_date(item,existing_code_json), file, indent = 4)
     except Exception as e:
         print(f"Failed to add files to {agency_name} directory: {e}")
 

@@ -1,31 +1,31 @@
 {
     "contact": {
-        "email": "stooksburys@osti.gov"
+        "email": "dkrakowski@anl.gov"
     },
     "date": {
-        "created": "2020-07-30",
-        "metadataLastUpdated": "2020-07-31"
+        "created": "2023-08-18",
+        "metadataLastUpdated": "2023-08-21"
     },
-    "description": "The job runner is started by the batch/resource manager system and is the component that actually executes the SDK module. It also provides the callback handler and pushes logs to the execution engine logging system.",
-    "laborHours": 2036.8,
+    "description": "SF-23-071\nJobrunner is a command line tool to manage and deploy computing jobs, organize complex workloads, and enforce a\ndirectory based hierarchy to enable reuse of files and bash scripts within a project. Organization details of a directory\ntree are encoded in Jobfiles which serve as an index of files/scripts, and indicate their purpose when deploying or\nsetting up a job. It is a flexible tool that allows users to design 16 their own directory structure, perserve their design,\nand maintain 17 consistency with increase in complexity of the project.\n",
+    "laborHours": 0.0,
     "languages": [],
-    "name": "JobRunner",
-    "organization": "Office of Scientific and Technical Information (OSTI)",
+    "name": "JOBRUNNER",
+    "organization": "Argonne National Laboratory (ANL)",
     "permissions": {
         "exemptionText": null,
         "licenses": [
             {
-                "URL": "https://api.github.com/licenses/mit",
-                "name": "MIT"
+                "URL": "https://api.github.com/licenses/apache-2.0",
+                "name": "Apache-2.0"
             }
         ],
         "usageType": "openSource"
     },
-    "repositoryURL": "https://github.com/kbase/JobRunner",
-    "status": "Development",
+    "repositoryURL": "https://github.com/akashdhruv/Jobrunner",
+    "status": "Production",
     "tags": [
         "DOE CODE",
-        "Office of Scientific and Technical Information (OSTI)"
+        "Argonne National Laboratory (ANL)"
     ],
     "vcs": "git"
 }
