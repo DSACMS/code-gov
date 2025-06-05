@@ -2,7 +2,7 @@ import json
 import os
 
 from codejson_index_generator import IndexGenerator
-from util import merge_indexes
+from util import merge_indexes, which_code_json_is_most_up_to_date
 
 AGENCY_CODEJSON_DIR = "agency-indexes"
 VERSION = '0.0.1'
@@ -55,10 +55,25 @@ def main():
                         continue
 
                     repoPath = os.path.join(agency_subdir, (repo_obj.name + '.json'))
-                    code_json = indexGen.save_code_json(repo_obj,repoPath)
+
+                    code_json = indexGen.get_code_json(repo_obj)
+
 
                     if code_json:
                         print(f"✅ Found code.json in {repo}")
+
+                        if os.path.exists(repoPath):
+                            try:
+                                with open(repoPath, 'r', encoding='utf-8') as file:
+                                    existing_code_json = json.load(file)
+                                
+                                code_json = which_code_json_is_most_up_to_date(code_json,existing_code_json)
+                            except Exception:
+                                print("could not open existing codejson File!")
+
+                        with open(repoPath, 'w') as f:
+                            json.dump(code_json,f,indent=2)
+
                         indexGen.update_index(indexGen.index,code_json,repo_obj.organization, repo_obj.name)
                     else:
                         print(f"❌ No code.json found in {repo}")

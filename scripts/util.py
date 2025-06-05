@@ -1,4 +1,5 @@
 import json
+from datetime import datetime
 
 def merge_indexes(data,existing_file):
     try:
@@ -27,3 +28,14 @@ def merge_indexes(data,existing_file):
     except Exception as e:
         print(f"Failed to read existing file: {e}")
         raise e
+
+
+def which_code_json_is_most_up_to_date(*args):
+
+    sorted_code_json_list = sorted(
+        args,
+        key=lambda d : datetime.strptime(
+            d['date']['metadataLastUpdated'],'%Y-%m-%d'
+            ),
+        reverse=True)
+    return sorted_code_json_list[0]
