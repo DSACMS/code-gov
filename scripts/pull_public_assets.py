@@ -2,7 +2,7 @@ import json
 import os
 
 from codejson_index_generator import IndexGenerator
-from .util import merge_indexes
+from util import merge_indexes
 
 AGENCY_CODEJSON_DIR = "agency-indexes"
 VERSION = '0.0.1'

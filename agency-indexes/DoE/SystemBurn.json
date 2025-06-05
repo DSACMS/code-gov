@@ -1,14 +1,14 @@
 {
     "contact": {
-        "email": "simsdl@ornl.gov"
+        "email": "laymancelk@ornl.gov"
     },
     "date": {
-        "created": "2018-04-18",
-        "metadataLastUpdated": "2018-04-18"
+        "created": "2017-10-25",
+        "metadataLastUpdated": "2017-10-25"
     },
-    "description": "SystemBurn is a software package designed to allow users to methodically create maximal loads on systems ranging from desktops to supercomputers.\n",
+    "description": "SystemBurn is a tool for creating a synthetic computational load for the purpose of measuring how much power a computer will draw under that type of load. The loads include fundamental library function calls like matrix multiply, memory copies, fourier transforms, bit manipulation, I/O, network packet transfers, and some code contrived to cause the processor to dray more or less power. The code produces some diagnostic and progress output, but the actual measurements would be recorded from the power panels within the computer room.",
     "laborHours": 17510.4,
-    "name": "Systemburn",
+    "name": "SystemBurn",
     "organization": "Oak Ridge National Laboratory (ORNL)",
     "permissions": {
         "exemptionText": null,
@@ -20,8 +20,8 @@
         ],
         "usageType": "openSource"
     },
-    "repositoryURL": "https://github.com/ORNL/systemburn",
-    "status": "Development",
+    "repositoryURL": "https://github.com/jlothian/systemburn",
+    "status": "Production",
     "tags": [
         "DOE CODE",
         "Oak Ridge National Laboratory (ORNL)"

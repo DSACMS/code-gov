@@ -3,13 +3,13 @@
         "email": "stooksburys@osti.gov"
     },
     "date": {
-        "created": "2020-07-30",
-        "metadataLastUpdated": "2020-07-31"
+        "created": "2020-09-16",
+        "metadataLastUpdated": "2020-09-16"
     },
-    "description": "The job runner is started by the batch/resource manager system and is the component that actually executes the SDK module. It also provides the callback handler and pushes logs to the execution engine logging system.",
-    "laborHours": 2036.8,
+    "description": "Identification of core annotation pipeline (CAP). The repository for workflow development to integrate in-house workflows into KBase. These scripts integrate assemblies, abundances, and annotations into a Phyloseq object, specifically genes which are core among multiple metagenomes.",
+    "laborHours": 136.8,
     "languages": [],
-    "name": "JobRunner",
+    "name": "CAP",
     "organization": "Office of Scientific and Technical Information (OSTI)",
     "permissions": {
         "exemptionText": null,
@@ -21,7 +21,7 @@
         ],
         "usageType": "openSource"
     },
-    "repositoryURL": "https://github.com/kbase/JobRunner",
+    "repositoryURL": "https://github.com/kbaseattic/cap",
     "status": "Development",
     "tags": [
         "DOE CODE",

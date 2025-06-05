@@ -6,9 +6,9 @@
         "created": "2018-04-18",
         "metadataLastUpdated": "2018-04-18"
     },
-    "description": "A library for modeling energy storage devices.\u00a0http://cap.readthedocs.org\n",
-    "laborHours": 6232.0,
-    "name": "Cap",
+    "description": "SystemBurn is a software package designed to allow users to methodically create maximal loads on systems ranging from desktops to supercomputers.\n",
+    "laborHours": 17510.4,
+    "name": "Systemburn",
     "organization": "Oak Ridge National Laboratory (ORNL)",
     "permissions": {
         "exemptionText": null,
@@ -20,7 +20,7 @@
         ],
         "usageType": "openSource"
     },
-    "repositoryURL": "https://github.com/ORNL-CEES/Cap",
+    "repositoryURL": "https://github.com/ORNL/systemburn",
     "status": "Development",
     "tags": [
         "DOE CODE",

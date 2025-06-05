@@ -1,7 +1,7 @@
 import requests
 import json
 import os
-from .util import merge_indexes
+from util import merge_indexes
 
 # the commented out links are not valid or cant be found
 agencies_links = {
@@ -35,7 +35,7 @@ headers = {
 }
 
 def add_directories_to_directory(data, agency_name):
-    directory_name = f"../agency-indexes/{agency_name}"
+    directory_name = f"agency-indexes/{agency_name}"
 
     try:
         if not os.path.exists(directory_name):
@@ -57,7 +57,7 @@ def add_directories_to_directory(data, agency_name):
 
 
 def add_indexes_to_directory(data, agency_name):
-    file_name = f"../agency-indexes/{agency_name}-index.json"
+    file_name = f"agency-indexes/{agency_name}-index.json"
 
     if os.path.exists(file_name):
         try:

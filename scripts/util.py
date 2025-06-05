@@ -1,3 +1,5 @@
+import json
+
 def merge_indexes(data,existing_file):
     try:
         with open(existing_file, 'r', encoding='utf-8') as file:
