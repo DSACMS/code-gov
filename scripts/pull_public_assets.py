@@ -2,6 +2,7 @@ import json
 import os
 
 from codejson_index_generator import IndexGenerator
+from .util import merge_indexes
 
 AGENCY_CODEJSON_DIR = "agency-indexes"
 VERSION = '0.0.1'
@@ -65,7 +66,13 @@ def main():
                 print(e)
 
 
-            indexGen.save_index(os.path.join(AGENCY_CODEJSON_DIR, agency + "_index.json"))
+            path_to_save = os.path.join(AGENCY_CODEJSON_DIR, agency + "-index.json")
+
+            #Merge with existing data.
+            if os.path.exists(path_to_save):
+                merge_indexes(indexGen.index,path_to_save)
+            
+            indexGen.save_index(path_to_save)
             print(f"\nIndexing complete. Results saved to {AGENCY_CODEJSON_DIR}")
         
     except Exception as e:
