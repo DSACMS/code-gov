@@ -1,37 +1,37 @@
 {
-    "contact": {
-        "URL": "https://github.com/CDCgov",
-        "email": "cdcinfo@cdc.gov"
-    },
-    "date": {
-        "created": "2017-12-25",
-        "lastModified": "2020-10-15"
-    },
-    "description": "An application to assist Utah CDC's Newborn Screening Program",
-    "downloadURL": "https://api.github.com/repos/CDCgov/artemis/downloads",
-    "homepageURL": "https://github.com/CDCgov/artemis",
-    "laborHours": 0,
-    "languages": [
-        "Ruby",
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "Dockerfile"
-    ],
-    "name": "artemis",
-    "organization": "Centers for Disease Control and Prevention",
-    "permissions": {
-        "licenses": [
-            {
-                "name": "NOASSERTION"
-            }
-        ],
-        "usageType": "openSource"
-    },
-    "repositoryURL": "git://github.com/CDCgov/artemis.git",
+    "name": "Artemis",
+    "description": "ACF Project led by Joanna Chan",
     "status": "Development",
-    "tags": [
-        "github"
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": null
+    },
+    "organization": "Department of Health and Human Services",
+    "homepageURL": "https://github.com/HHS/Artemis",
+    "downloadURL": "https://api.github.com/repos/HHS/Artemis/downloads",
+    "repositoryURL": "https://github.com/HHS/Artemis.git",
+    "vcs": "git",
+    "laborHours": 0.0,
+    "languages": [
+        "Jupyter Notebook",
+        "Python",
+        "Jinja",
+        "Shell"
     ],
-    "vcs": "git"
+    "date": {
+        "created": "2021-06-08",
+        "lastModified": "2022-01-10",
+        "metadataLastUpdated": "2022-03-22"
+    },
+    "tags": [
+        "ACF",
+        "Project",
+        "led",
+        "Joanna",
+        "Chan"
+    ],
+    "contact": {
+        "email": "HHS_GitHub_Service_Desk@hhs.gov",
+        "name": "U.S. Department of Health & Human Services"
+    }
 }
