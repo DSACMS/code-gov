@@ -8,6 +8,8 @@ This strategy serves to create a responsive agile site that reduces costs while 
 
 This is accompished through the code.json metadata standard. 
 
+See further documentation [here](./docs/overview.md)
+
 # Digital Service at CMS (DSACMS)
 
 We're a group of civic-minded technologists transforming how the federal government delivers healthcare to the American people. The Digital Service at CMS (DSAC) consists of engineers, designers, and product managers—serving our country by building and maintaining the technology underpinning our national health care programs.
