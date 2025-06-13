@@ -162,44 +162,52 @@ const createAgencyCardHTML = (agency) => `
     </div>
 `;
 
-const createProjectCardHTML = (project) => `
-    <div class="project-card">
-        <div class="usa-card__container border-base-light radius-0 border-1px hover:shadow-2 card-list-item">
-            <header class="usa-card__header">
-                <h3 class="usa-card__heading font-heading-lg margin-top-0">
-                    <a href="${project.repositoryURL}" target="_blank" rel="noopener noreferrer">${ project.name }</a>
-                </h3>
-                <div class="usa-card__subheading font-body-sm text-base-dark">
-                    ${project.organization} • ${project.agencyName}
-                </div>
-            </header>
-            <div class="usa-card__body">
-                <p class="font-body-sm">${project.description}</p>
-                <div class="font-body-3xs margin-top-1">
-                    <div class="grid-row grid-gap-1">
-                        <div class="grid-col-auto">
-                            <span class="usa-tag usa-tag-big">${project.status}</status>
+const createProjectCardHTML = (project) => {
+    const ensureArray = (value) => {
+        if (Array.isArray(value)) return value;
+        if (typeof value === 'string') return [value];
+        return [];
+    }
+    
+    return `
+        <div class="project-card">
+            <div class="usa-card__container border-base-light radius-0 border-1px hover:shadow-2 card-list-item">
+                <header class="usa-card__header">
+                    <h3 class="usa-card__heading font-heading-lg margin-top-0">
+                        <a href="${project.repositoryURL}" target="_blank" rel="noopener noreferrer">${ project.name }</a>
+                    </h3>
+                    <div class="usa-card__subheading font-body-sm text-base-dark">
+                        ${project.organization} • ${project.agencyName}
+                    </div>
+                </header>
+                <div class="usa-card__body">
+                    <p class="font-body-sm">${project.description}</p>
+                    <div class="font-body-3xs margin-top-1">
+                        <div class="grid-row grid-gap-1">
+                            <div class="grid-col-auto">
+                                <span class="usa-tag usa-tag-big">${project.status}</status>
+                            </div>
+                            ${ensureArray(project.languages).slice(0, 3).map(language =>
+                                `<div class="grid-col-auto"><span class="usa-tag">${language}</span></div>`
+                            ).join('')}
                         </div>
-                        ${project.languages.slice(0, 3).map(language =>
-                            `<div class="grid-col-auto"><span class="usa-tag">${language}</span></div>`
-                        ).join('')}
                     </div>
                 </div>
-            </div>
-            <div class="usa-card__footer font-body-3xs">
-                <div class="grid-row">
-                    <div class="grid-col-6">
-                        <span class="text-bold">License: </span>${project.license.name || 'N/A'}
-                    </div>
-                    <div class="grid-col-6">
-                        <span class="text-bold">Updated: </span>
-                        ${project.dates.lastModified ? new Date(project.dates.lastModified).toLocaleDateString() : 'N/A'}
+                <div class="usa-card__footer font-body-3xs">
+                    <div class="grid-row">
+                        <div class="grid-col-6">
+                            <span class="text-bold">License: </span>${project.license.name || 'N/A'}
+                        </div>
+                        <div class="grid-col-6">
+                            <span class="text-bold">Updated: </span>
+                            ${project.dates.lastModified ? new Date(project.dates.lastModified).toLocaleDateString() : 'N/A'}
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-`;
+    `;
+};
 
 
 

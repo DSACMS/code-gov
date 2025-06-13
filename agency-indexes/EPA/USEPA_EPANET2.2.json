@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/EPANET2.2",
+    "organization": "usepa",
+    "description": "Perform extended-period simulation of the hydraulic and water quality behavior within drinking water distribution systems",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/EPANET2.2/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/EPANET2.2",
+    "downloadURL": "https://github.com/USEPA/EPANET2.2/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/EPANET2.2/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/EPANET2.2.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2019-11-07T18:05:33Z",
+        "lastModified": "2025-02-12T19:16:36Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.112Z"
+    }
+}

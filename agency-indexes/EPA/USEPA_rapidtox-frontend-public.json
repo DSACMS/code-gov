@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/rapidtox-frontend-public",
+    "organization": "usepa",
+    "description": "",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/rapidtox-frontend-public/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/rapidtox-frontend-public",
+    "downloadURL": "https://github.com/USEPA/rapidtox-frontend-public/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/rapidtox-frontend-public/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/rapidtox-frontend-public.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2025-04-14T19:47:50Z",
+        "lastModified": "2025-04-16T18:48:56Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.336Z"
+    }
+}

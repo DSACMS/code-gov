@@ -1,0 +1,60 @@
+{
+    "contact": {
+        "URL": "https://github.com/US-CBP",
+        "email": "do_not_email_just_use_github@dhs.gov"
+    },
+    "date": {
+        "created": "2016-06-29",
+        "lastModified": "2025-03-14"
+    },
+    "description": "Global Travel Assessment System | A passenger data screening and analysis system for enhancing global security",
+    "downloadURL": "https://api.github.com/repos/US-CBP/GTAS/downloads",
+    "homepageURL": "https://github.com/US-CBP/GTAS",
+    "laborHours": 191308.2,
+    "languages": [
+        "Java",
+        "JavaScript",
+        "HTML",
+        "Shell",
+        "CSS",
+        "Dockerfile",
+        "Python",
+        "FreeMarker"
+    ],
+    "name": "GTAS",
+    "organization": "U.S. Customs and Border Protection",
+    "permissions": {
+        "licenses": [
+            {
+                "name": "NOASSERTION"
+            }
+        ],
+        "usageType": "openSource"
+    },
+    "repositoryURL": "https://github.com/US-CBP/GTAS.git",
+    "status": "Development",
+    "tags": [
+        "github",
+        "risk-assessment",
+        "passenger-name-record",
+        "pnr",
+        "rules-engine",
+        "parsing",
+        "travel",
+        "advance-passenger-information",
+        "drools",
+        "hibernate",
+        "spring",
+        "gtas",
+        "wco",
+        "customs",
+        "angular",
+        "flight",
+        "un-edifact",
+        "passenger",
+        "pnrgov",
+        "neo4j",
+        "pentaho-data-integration"
+    ],
+    "vcs": "git"
+}

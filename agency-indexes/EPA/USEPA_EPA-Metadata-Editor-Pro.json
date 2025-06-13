@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/EPA-Metadata-Editor-Pro",
+    "organization": "usepa",
+    "description": "",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/EPA-Metadata-Editor-Pro/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/EPA-Metadata-Editor-Pro",
+    "downloadURL": "https://github.com/USEPA/EPA-Metadata-Editor-Pro/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/EPA-Metadata-Editor-Pro/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/EPA-Metadata-Editor-Pro.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2020-05-26T15:45:59Z",
+        "lastModified": "2025-05-05T22:43:55Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.128Z"
+    }
+}

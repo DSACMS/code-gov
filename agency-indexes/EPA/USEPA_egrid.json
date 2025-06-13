@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/egrid",
+    "organization": "usepa",
+    "description": " Emissions & Generation Resource Integrated Database (eGRID)",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/egrid/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/egrid",
+    "downloadURL": "https://github.com/USEPA/egrid/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/egrid/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/egrid.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2023-06-13T13:34:46Z",
+        "lastModified": "2025-06-03T13:26:42Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.206Z"
+    }
+}

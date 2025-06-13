@@ -106,6 +106,7 @@ web_modules/
 .env.production.local
 .env.local
 .venv/
+__pycache__/
 
 # VSCode files, e.g. launch configuration
 .vscode

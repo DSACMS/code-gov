@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/RCRAStarterKit",
+    "organization": "usepa",
+    "description": "",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/RCRAStarterKit/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/RCRAStarterKit",
+    "downloadURL": "https://github.com/USEPA/RCRAStarterKit/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/RCRAStarterKit/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/RCRAStarterKit.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2021-02-18T15:11:20Z",
+        "lastModified": "2021-03-01T14:25:28Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.144Z"
+    }
+}

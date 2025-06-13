@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/2025_Region8_AnalysisTool",
+    "organization": "usepa",
+    "description": "R Shiny Application (under development) built using the Golem Framework. This application is being developed to assist EPA and Region 8 states and tribal nations with accessing, analyzing and visualizing Water Quality Portal (WQP) data.  ",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/2025_Region8_AnalysisTool/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/2025_Region8_AnalysisTool",
+    "downloadURL": "https://github.com/USEPA/2025_Region8_AnalysisTool/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/2025_Region8_AnalysisTool/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/2025_Region8_AnalysisTool.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2025-02-24T21:08:46Z",
+        "lastModified": "2025-03-19T08:43:15Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.317Z"
+    }
+}

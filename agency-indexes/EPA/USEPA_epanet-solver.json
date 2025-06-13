@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/epanet-solver",
+    "organization": "usepa",
+    "description": "Perform extended-period simulation of the hydraulic and water quality behavior within drinking water distribution systems",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/epanet-solver/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/epanet-solver",
+    "downloadURL": "https://github.com/USEPA/epanet-solver/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/epanet-solver/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/epanet-solver.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2014-03-14T17:18:46Z",
+        "lastModified": "2022-02-17T19:39:27Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.044Z"
+    }
+}

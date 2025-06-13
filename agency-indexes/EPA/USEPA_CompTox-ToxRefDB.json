@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/CompTox-ToxRefDB",
+    "organization": "usepa",
+    "description": "US EPA's Toxicity Reference Database (ToxRefDB)",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/CompTox-ToxRefDB/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/CompTox-ToxRefDB",
+    "downloadURL": "https://github.com/USEPA/CompTox-ToxRefDB/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/CompTox-ToxRefDB/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/CompTox-ToxRefDB.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2018-03-26T20:56:54Z",
+        "lastModified": "2023-04-05T12:07:31Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.088Z"
+    }
+}

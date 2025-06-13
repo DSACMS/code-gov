@@ -1,0 +1,39 @@
+{
+    "contact": {
+        "URL": "https://github.com/US-CBP",
+        "email": "do_not_email_just_use_github@dhs.gov"
+    },
+    "date": {
+        "created": "2016-08-01",
+        "lastModified": "2020-05-18"
+    },
+    "description": "The CBP Style Guide to compliment the CBP Theme.  The style guide describes CBP theme components and patterns and how to use them.",
+    "downloadURL": "https://api.github.com/repos/US-CBP/cbp-style-guide/downloads",
+    "homepageURL": "https://github.com/US-CBP/cbp-style-guide",
+    "laborHours": 42305.3,
+    "languages": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Shell"
+    ],
+    "name": "cbp-style-guide",
+    "organization": "U.S. Customs and Border Protection",
+    "permissions": {
+        "licenses": [
+            {
+                "name": "NOASSERTION"
+            }
+        ],
+        "usageType": "openSource"
+    },
+    "repositoryURL": "https://github.com/US-CBP/cbp-style-guide.git",
+    "status": "Development",
+    "tags": [
+        "github",
+        "cbp-theme",
+        "jekyll",
+        "style-guide"
+    ],
+    "vcs": "git"
+}

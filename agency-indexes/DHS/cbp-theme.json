@@ -1,0 +1,43 @@
+{
+    "contact": {
+        "URL": "https://github.com/US-CBP",
+        "email": "do_not_email_just_use_github@dhs.gov"
+    },
+    "date": {
+        "created": "2016-07-05",
+        "lastModified": "2021-12-21"
+    },
+    "description": "UI Theme for U.S. Customs and Border Protection web applications",
+    "downloadURL": "https://api.github.com/repos/US-CBP/cbp-theme/downloads",
+    "homepageURL": "https://github.com/US-CBP/cbp-theme",
+    "laborHours": 84552.7,
+    "languages": [
+        "JavaScript",
+        "HTML",
+        "SCSS",
+        "Swift",
+        "CSS",
+        "Objective-C",
+        "Shell"
+    ],
+    "name": "cbp-theme",
+    "organization": "U.S. Customs and Border Protection",
+    "permissions": {
+        "licenses": [
+            {
+                "name": "NOASSERTION"
+            }
+        ],
+        "usageType": "openSource"
+    },
+    "repositoryURL": "https://github.com/US-CBP/cbp-theme.git",
+    "status": "Development",
+    "tags": [
+        "github",
+        "cbp-theme",
+        "cbp",
+        "ui-theme",
+        "design-system"
+    ],
+    "vcs": "git"
+}

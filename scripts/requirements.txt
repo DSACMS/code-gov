@@ -1,1 +1,2 @@
 codejson-index-generator
+python-dateutil

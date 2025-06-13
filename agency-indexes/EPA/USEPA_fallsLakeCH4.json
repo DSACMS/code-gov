@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/fallsLakeCH4",
+    "organization": "usepa",
+    "description": "",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/fallsLakeCH4/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/fallsLakeCH4",
+    "downloadURL": "https://github.com/USEPA/fallsLakeCH4/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/fallsLakeCH4/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/fallsLakeCH4.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2018-03-01T22:27:59Z",
+        "lastModified": "2024-08-29T03:07:12Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.086Z"
+    }
+}

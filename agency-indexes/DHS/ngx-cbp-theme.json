@@ -1,0 +1,49 @@
+{
+    "contact": {
+        "URL": "https://github.com/US-CBP",
+        "email": "do_not_email_just_use_github@dhs.gov"
+    },
+    "date": {
+        "created": "2017-08-30",
+        "lastModified": "2023-12-19"
+    },
+    "description": "Angular 5/6/7 library based on the CBP Theme",
+    "downloadURL": "https://api.github.com/repos/US-CBP/ngx-cbp-theme/downloads",
+    "homepageURL": "https://github.com/US-CBP/ngx-cbp-theme",
+    "laborHours": 10617.7,
+    "languages": [
+        "TypeScript",
+        "HTML",
+        "SCSS",
+        "JavaScript"
+    ],
+    "name": "ngx-cbp-theme",
+    "organization": "U.S. Customs and Border Protection",
+    "permissions": {
+        "licenses": [
+            {
+                "URL": "https://api.github.com/licenses/cc0-1.0",
+                "name": "CC0-1.0"
+            }
+        ],
+        "usageType": "openSource"
+    },
+    "repositoryURL": "https://github.com/US-CBP/ngx-cbp-theme.git",
+    "status": "Development",
+    "tags": [
+        "github",
+        "angular-cli",
+        "cbp-theme",
+        "material2",
+        "cbp",
+        "scss",
+        "angular",
+        "material",
+        "typescript",
+        "angular6",
+        "angular7",
+        "angular-cbp-applications",
+        "angular-native-components"
+    ],
+    "vcs": "git"
+}

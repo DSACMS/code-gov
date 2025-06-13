@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/GeoPlatform-Request-Tool",
+    "organization": "usepa",
+    "description": "Provisions EPA GeoPlatform (GPO) user accounts during emergency response events and projects",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/GeoPlatform-Request-Tool/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/GeoPlatform-Request-Tool",
+    "downloadURL": "https://github.com/USEPA/GeoPlatform-Request-Tool/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/GeoPlatform-Request-Tool/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/GeoPlatform-Request-Tool.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2019-06-26T17:50:34Z",
+        "lastModified": "2025-02-11T23:56:46Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.104Z"
+    }
+}

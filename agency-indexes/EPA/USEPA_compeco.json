@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/compeco",
+    "organization": "usepa",
+    "description": "R package for ACESD computational ecology stuff",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/compeco/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/compeco",
+    "downloadURL": "https://github.com/USEPA/compeco/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/compeco/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/compeco.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2021-11-16T15:14:30Z",
+        "lastModified": "2025-02-07T13:15:35Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.162Z"
+    }
+}

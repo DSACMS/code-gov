@@ -1,0 +1,33 @@
+{
+    "contact": {
+        "URL": "https://github.com/cisagov",
+        "email": "do_not_email_just_use_github@dhs.gov"
+    },
+    "date": {
+        "created": "2021-07-26",
+        "lastModified": "2023-07-26"
+    },
+    "description": "Back end Java component of FLAREclient application",
+    "downloadURL": "https://api.github.com/repos/cisagov/FLAREclient-Java/downloads",
+    "homepageURL": "https://github.com/cisagov/FLAREclient-Java",
+    "laborHours": 117794.3,
+    "languages": [
+        "Java",
+        "HTML",
+        "Gherkin",
+        "Shell",
+        "Dockerfile"
+    ],
+    "name": "FLAREclient-Java",
+    "organization": "Cybersecurity and Infrastructure Security Agency",
+    "permissions": {
+        "licenses": null,
+        "usageType": "openSource"
+    },
+    "repositoryURL": "https://github.com/cisagov/FLAREclient-Java.git",
+    "status": "Development",
+    "tags": [
+        "github"
+    ],
+    "vcs": "git"
+}

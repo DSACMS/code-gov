@@ -1,0 +1,36 @@
+{
+    "contact": {
+        "URL": "https://github.com/US-CBP",
+        "email": "do_not_email_just_use_github@dhs.gov"
+    },
+    "date": {
+        "created": "2016-10-20",
+        "lastModified": "2019-01-29"
+    },
+    "description": "Angular2 Library to get CBP-theme wrap up as components",
+    "downloadURL": "https://api.github.com/repos/US-CBP/ng2-cbp-cf/downloads",
+    "homepageURL": "https://github.com/US-CBP/ng2-cbp-cf",
+    "laborHours": 12588.2,
+    "languages": [
+        "TypeScript",
+        "CSS",
+        "HTML",
+        "JavaScript"
+    ],
+    "name": "ng2-cbp-cf",
+    "organization": "U.S. Customs and Border Protection",
+    "permissions": {
+        "licenses": [
+            {
+                "name": "NOASSERTION"
+            }
+        ],
+        "usageType": "openSource"
+    },
+    "repositoryURL": "https://github.com/US-CBP/ng2-cbp-cf.git",
+    "status": "Development",
+    "tags": [
+        "github"
+    ],
+    "vcs": "git"
+}

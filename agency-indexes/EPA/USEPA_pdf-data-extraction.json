@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/pdf-data-extraction",
+    "organization": "usepa",
+    "description": "",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/pdf-data-extraction/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/pdf-data-extraction",
+    "downloadURL": "https://github.com/USEPA/pdf-data-extraction/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/pdf-data-extraction/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/pdf-data-extraction.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2020-09-01T12:44:03Z",
+        "lastModified": "2022-09-06T16:17:36Z",
+        "metadataLastUpdated": "2025-06-04T06:24:54.133Z"
+    }
+}
