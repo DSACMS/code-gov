@@ -1,15 +1,14 @@
-# CMS Open Source Program Office Guide
+# Code-gov
 
-ospo-guide is a collection of resources written by the CMS Open Source Program Office.
-https://dsacms.github.io/ospo-guide/
+Code-gov is a redux project aiming to replicate the functionality provided by code.gov. This site aims to provide a software inventory and informational resource about open source projects throughout the federal government. 
 
-What's in the guide:
+This site is populated through GitHub actions and Python scripts that save data that is used by a static eleventy site that replicates the functionality of the old code.gov. 
 
-- [Inbound](https://dsacms.github.io/ospo-guide/inbound/)
-- [Outbound](https://dsacms.github.io/ospo-guide/outbound)
-- [Growing](https://dsacms.github.io/ospo-guide/growing)
-- [Resources](https://dsacms.github.io/ospo-guide/resources)
-- [About](https://dsacms.github.io/ospo-guide/about)
+This strategy serves to create a responsive agile site that reduces costs while providing a valuable resource on government code repositories.
+
+This is accompished through the code.json metadata standard. 
+
+See further documentation [here](./docs/overview.md)
 
 # Digital Service at CMS (DSACMS)
 
