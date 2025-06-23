@@ -7,7 +7,7 @@ tags: codegov
 eleventyNavigation:
   parent: codegov-guidance
   key: codegov-guidance-exemptions
-  order: 3
+  order: 4
   title: How to Identify Exempted Code
 sidenav: true
 sticky_sidenav: true
