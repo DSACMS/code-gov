@@ -3,6 +3,9 @@
 .AppleDouble
 .LSOverride
 
+# vim swap files
+*.swp
+
 # Icon must end with two \r
 Icon
 
