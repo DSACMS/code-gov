@@ -12,6 +12,8 @@
                     data-filter-type="search"
                 >
             </div>
+
+            {% if filterTarget == 'projects' %}
             <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4">
                 <label class="usa-label" for="select-status">Status</label>
                 <select class="usa-select" id="status-select" name="status" data-filter-type="select">
@@ -21,7 +23,7 @@
                     {% endfor %}
                 </select>
             </div>
-            {% if filterTarget == 'projects' %}
+
             <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4">
                 <label class="usa-label" for="category-select">Category</label>
                 <select class="usa-select" id="category-select" name="category" data-filter-type="select">
@@ -49,7 +51,7 @@
                     {% endfor %}
                 </select>
             </div>
-            {% endif %}
+
             <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4">
                 <label class="usa-label" for="org-select">Organization</label>
                 <select class="usa-select" id="org-select" name="organization" data-filter-type="select">
@@ -59,6 +61,38 @@
                     {% endfor %}
                 </select>
             </div>
+            {% endif %}
+
+            {% if filterTarget == 'issues' %}
+            <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-10">
+                <label class="usa-label" for="label-select">Label</label>
+                <select class="usa-select" id="label-select" name="label" data-filter-type="select">
+                    <option value="">All Labels</option>
+                    {% for label in issuesData.filters.labels %}
+                    <option value="{{ label }}">{{ label }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-10">
+                <label class="usa-label" for="repo-select">Repository</label>
+                <select class="usa-select" id="repo-select" name="repository" data-filter-type="select">
+                    <option value="">All Repositories</option>
+                    {% for repo in issuesData.filters.repos %}
+                    <option value="{{ repo }}">{{ repo }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-10">
+                <label class="usa-label" for="type-select">Type</label>
+                <select class="usa-select" id="type-select" name="type" data-filter-type="select">
+                    <option value="">All Types</option>
+                    {% for type in issuesData.filters.types %}
+                    <option value="{{ type }}">{{ type }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            {% endif %}
+
         </div>
         <div class="grid-row grid-gap margin-top-2">
             <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-4">
