@@ -83,8 +83,12 @@ def add_indexes_to_directory(data, agency_name):
     except Exception as e: 
         print(f"Failed to save JSON file: {e}")
 
+
 def main():
     try:
+        file_path = "../legacy-codegov.json"
+        legacy_codegov = {}
+
         for agency, link in agencies_links.items():
             response = requests.get(link, headers = headers)
     
@@ -97,6 +101,14 @@ def main():
 
                 add_indexes_to_directory(data, agency)
                 add_directories_to_directory(data["releases"], agency)
+
+                legacy_codegov[agency] = data["releases"]
+
+                try:
+                    with open(file_path, 'w', encoding='utf-8') as file:
+                        json.dump(legacy_codegov, file, indent=4, ensure_ascii=False)
+                except Exception as e:
+                    print(f"Failed to create legacy-codegov.json: {e}")
             else:
                 print("Error message from API:", response.text)
 
