@@ -1,5 +1,5 @@
 <div class="filters-container" data-filter-target="{{ filterTarget }}">
-    <form class="usa-form usa-form--large" id="filter-form">
+    <form class="usa-form usa-form--large padding-right-3" id="filter-form">
         <div class="filter-inputs grid-col grid-gap">
             <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-10">
                 <label class="usa-label" for="search-input">Search</label>
@@ -16,11 +16,18 @@
                 <label class="usa-label" for="select-status">Status</label>
                 <select class="usa-select" id="status-select" name="status" data-filter-type="select">
                     <option value="">All Statuses</option>
-                    {% for status in codegovData.filters.statuses %}
-                        <option value="{{ status }}">{{ status }}</option>
-                    {% endfor %}
+                    {% if filterTarget == 'issues' %}
+                        {% for status in issuesData.filters.statuses %}
+                            <option value="{{ status }}">{{ status }}</option>
+                        {% endfor %}
+                    {% else %}
+                        {% for status in codegovData.filters.statuses %}
+                            <option value="{{ status }}">{{ status }}</option>
+                        {% endfor %}
+                    {% endif %}
                 </select>
             </div>
+            {% if filterTarget != 'issues' %}
             <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-10">
                 <label class="usa-label" for="agency-status">Federal Agency</label>
                 <select class="usa-select" id="agency-select" name="agency" data-filter-type="select">
@@ -30,6 +37,7 @@
                     {% endfor %}
                 </select>
             </div>
+            {% endif %}
             {% if filterTarget == 'projects' %}
             <div class="grid-col-12 tablet:grid-col-6 desktop:grid-col-10">
                 <label class="usa-label" for="category-select">Category</label>
@@ -63,9 +71,15 @@
                 <label class="usa-label" for="org-select">Organization</label>
                 <select class="usa-select" id="org-select" name="organization" data-filter-type="select">
                     <option value="">All Organizations</option>
-                    {% for org in codegovData.filters.organizations %}
-                        <option value="{{ org }}">{{ org }}</option>
-                    {% endfor %}
+                    {% if filterTarget == 'issues' %}
+                        {% for org in issuesData.filters.organizations %}
+                            <option value="{{ org }}">{{ org }}</option>
+                        {% endfor %}
+                    {% else %}
+                        {% for org in codegovData.filters.organizations %}
+                            <option value="{{ org }}">{{ org }}</option>
+                        {% endfor %}
+                    {% endif %}
                 </select>
             </div>
         </div>
@@ -78,6 +92,11 @@
                         <option value="name-desc">Name (Z-A)</option>
                         <option value="projects-asc">Fewest Projects</option>
                         <option value="projects-desc">Most Projects</option>
+                    {% else if filterTarget == 'issues' %}
+                        <option value="comments-desc">Most Comments</option>
+                        <option value="comments-asc">Fewest Comments</option>
+                        <option value="reactions-asc">Fewest Reactions</option>
+                        <option value="reactions-desc">Most Reactions</option>
                     {% else %}
                         <option value="name-asc">Name (A-Z)</option>
                         <option value="name-desc">Name (Z-A)</option>
@@ -94,8 +113,6 @@
                 <button type="button" class="filter-clear-button usa-button usa-button--outline margin-left-4" id="clear-filters">
                     Clear Filters
                 </button>
-            </div>
-            <div class="grid-col-auto">
                 <span id="results-count" class="usa-hint margin-left-2"></span>
             </div>
         </div>

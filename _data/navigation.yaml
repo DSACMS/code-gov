@@ -4,5 +4,7 @@ codegov:
     url: /
   - name: Agencies
     url: /agencies/
+  - name: Issues
+    url: /issues/
   - name: Guidance
     url: /agency-compliance/compliance/dashboard/
