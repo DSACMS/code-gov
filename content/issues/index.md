@@ -14,10 +14,11 @@ sticky_sidenav: false
 templateEngineOverride: liquid, html
 ---
 
+<script type="application/json" data-issues>{{ issuesData.issues | json }}</script>
+
 <div class="card-and-filter-container">
-{% include "filters.html", filterTarget: "issues" %}
+    {% include "filters.html", filterTarget: "issues" %}
     <div class="agency-grid" id="issues-grid"></div>
 </div>
 
-<script type="application/json" data-issues>{{ issuesData.issues | json }}</script>
-<script src='/assets/_common/js/issue-filters.js'></script>
+<script src='{{ assetPaths["issue-filters.js"] }}'></script>

@@ -65,6 +65,7 @@ esbuild
       'assets/_common/styles/styles.scss',
       'assets/_common/js/app.js',
       'assets/_common/js/filters.js',
+      'assets/_common/js/issue-filters.js',
     ],
     entryNames: '[dir]/[name]-[hash]',
     outdir: '_site/assets/',
