@@ -9,7 +9,7 @@ const markdownItFootnote = require('markdown-it-footnote');
 const { readableDate, htmlDateString, head, min, filterTagList } = require("./config/filters");
 const { headingLinks } = require("./config/headingLinks");
 const { contrastRatio, humanReadableContrastRatio } = require("./config/wcagColorContrast");
-const privateLinks = require ('./config/privateLinksList.js');
+const privateLinks = require('./config/privateLinksList.js');
 const svgSprite = require("eleventy-plugin-svg-sprite");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const yaml = require("js-yaml");
@@ -28,7 +28,7 @@ module.exports = function (config) {
   config.addPassthroughCopy('robots.txt');
 
   // Copy USWDS init JS so we can load it in HEAD to prevent banner flashing
-  config.addPassthroughCopy({'./node_modules/@uswds/uswds/dist/js/uswds-init.js': 'assets/js/uswds-init.js'});
+  config.addPassthroughCopy({ './node_modules/@uswds/uswds/dist/js/uswds-init.js': 'assets/js/uswds-init.js' });
 
   // Specific scripts to guides
   config.addPassthroughCopy("./assets/**/js/*");
@@ -36,8 +36,9 @@ module.exports = function (config) {
   config.addPassthroughCopy("./assets/_common/js/filters.js");
   config.addPassthroughCopy("./assets/_common/js/issue-filters.js");
 
-  config.addPassthroughCopy({'./assets/_common/_img/favicons/favicon.ico': './favicon.ico' });
-  config.addPassthroughCopy({'./assets/_common/_img/favicons': './img/favicons' });
+  config.addPassthroughCopy({ './assets/_common/_img/favicons/favicon.ico': './favicon.ico' });
+  config.addPassthroughCopy({ './assets/_common/_img/favicons': './img/favicons' });
+  config.addPassthroughCopy({ './assets/resources/img/agency_logos': './img/agency_logos' });
 
   // Set download paths
   // Place files for download in assets/{guide}/dist/{filename.ext}
@@ -90,7 +91,7 @@ module.exports = function (config) {
     return value.toUpperCase();
   });
 
-  config.addFilter("capitalize", (value) =>{
+  config.addFilter("capitalize", (value) => {
     return value.charAt(0).toUpperCase() + value.slice(1);
   });
 
@@ -122,15 +123,15 @@ module.exports = function (config) {
 
   // Override Footnote opener
   markdownLibrary.renderer.rules.footnote_block_open = () => (
-  '<section class="footnotes">\n' +
-  '<ol class="footnotes-list">\n'
+    '<section class="footnotes">\n' +
+    '<ol class="footnotes-list">\n'
   );
 
   // Add icons for links with locked resources and external links
   // https://github.com/markdown-it/markdown-it/blob/master/docs/architecture.md
   // Token methods:  https://github.com/markdown-it/markdown-it/blob/master/lib/token.js#L125
   const openDefaultRender = markdownLibrary.renderer.rules.link_open ||
-    function(tokens, idx, options, env, self) {
+    function (tokens, idx, options, env, self) {
       return self.renderToken(tokens, idx, options);
     };
 
@@ -139,10 +140,10 @@ module.exports = function (config) {
     let prefixIcon = '';
     if (privateLinks.some((link) => token.attrGet('href').indexOf(link) >= 0)) {
       prefixIcon = '<span class="usa-sr-only"> 18F only, </span>' +
-                   '<svg class="usa-icon margin-top-2px margin-right-2px top-2px" ' +
-                   'aria-hidden="true" role="img">' +
-                   '<use xlink:href="#svg-lock_outline"></use>' +
-                   '</svg>'
+        '<svg class="usa-icon margin-top-2px margin-right-2px top-2px" ' +
+        'aria-hidden="true" role="img">' +
+        '<use xlink:href="#svg-lock_outline"></use>' +
+        '</svg>'
     }
 
     // Check for external URLs. External means any site that is not a federal .gov url
@@ -166,7 +167,7 @@ module.exports = function (config) {
   };
 
   const defaultHtmlBlockRender = markdownLibrary.renderer.rules.html_block ||
-    function(tokens, idx, options, env, self) {
+    function (tokens, idx, options, env, self) {
       return self.renderToken(tokens, idx, options);
     };
 
@@ -213,26 +214,26 @@ module.exports = function (config) {
 
   // Also need to add icon links to any html style links
   const inlineHTMLDefaultRender = markdownLibrary.renderer.rules.html_inline ||
-    function(tokens, idx, options, env, self) {
+    function (tokens, idx, options, env, self) {
       return self.renderToken(tokens, idx, options);
     };
 
   const linkOpenRE = /^<a[>\s]/i;
   markdownLibrary.renderer.rules.html_inline = (tokens, idx, options, env, self) => {
-    const token=tokens[idx];
+    const token = tokens[idx];
     if (linkOpenRE.test(token.content) && token.content.includes('http')) {
       let content = token.content;
 
       //Add private link icon
       const hrefRE = /href=\"([^"]*)/;
       // get the matching capture group
-      const contentUrl =  content.match(hrefRE)[1];
+      const contentUrl = content.match(hrefRE)[1];
       if (privateLinks.some((privateLink) => contentUrl.indexOf(privateLink) >= 0)) {
         const prefixIcon = '<span class="usa-sr-only"> 18F only, </span>' +
-                           '<svg class="usa-icon margin-top-2px margin-right-2px top-2px" ' +
-                           'aria-hidden="true" role="img">' +
-                           '<use xlink:href="#svg-lock_outline"></use>' +
-                           '</svg>'
+          '<svg class="usa-icon margin-top-2px margin-right-2px top-2px" ' +
+          'aria-hidden="true" role="img">' +
+          '<use xlink:href="#svg-lock_outline"></use>' +
+          '</svg>'
         content = content.replace('>', `> ${prefixIcon}`);
         tokens[idx].content = content;
       }
