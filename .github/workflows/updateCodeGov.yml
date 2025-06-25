@@ -29,6 +29,8 @@ jobs:
         run: node config/updateCodeGov.js
 
       - name: Update issue-pool.json
+        env: 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node config/updateIssuePool.js
 
       - name: Configure Git
