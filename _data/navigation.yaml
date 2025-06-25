@@ -4,6 +4,8 @@ codegov:
     url: /
   - name: Agencies
     url: /agencies/
+  - name: Projects
+    url: /projects/
   - name: Issues
     url: /issues/
   - name: Guidance
