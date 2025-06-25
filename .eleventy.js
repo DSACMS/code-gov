@@ -34,6 +34,7 @@ module.exports = function (config) {
   config.addPassthroughCopy("./assets/**/js/*");
   config.addPassthroughCopy("./assets/_common/js/*");
   config.addPassthroughCopy("./assets/_common/js/filters.js");
+  config.addPassthroughCopy("./assets/_common/js/issue-filters.js");
 
   config.addPassthroughCopy({'./assets/_common/_img/favicons/favicon.ico': './favicon.ico' });
   config.addPassthroughCopy({'./assets/_common/_img/favicons': './img/favicons' });
