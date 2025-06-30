@@ -23,7 +23,7 @@ async function getRepoInfo() { // dont know how i feel about this double loop se
     let repoInfo = []
 
     try {
-        const content = await fs.readFile(CONFIG.repoFilePath, "utf-8") // filter by tier 3 maturity to get the projects that truly want outside help 
+        const content = await fs.readFile(CONFIG.repoFilePath, "utf-8") 
         const jsonData = JSON.parse(content)
 
         for (const agencyKey in jsonData) {
@@ -34,12 +34,17 @@ async function getRepoInfo() { // dont know how i feel about this double loop se
 
                     if (organization.repositoryURL) {
                         const match = organization.repositoryURL.match(CONFIG.regex)
-                        const [url, owner, repo] = match
 
-                        repoInfo.push({
-                            ownerName: owner,
-                            repoName: repo
-                        })
+                        if (match) {
+                            const [url, owner, repo] = match
+    
+                            repoInfo.push({
+                                ownerName: owner,
+                                repoName: repo
+                            })
+                        } else {
+                            console.warn(`No match found for URL: ${organization.repositoryURL}`)
+                        }
                     }
                 }
             }
@@ -143,14 +148,14 @@ async function updateIssuePool() {
                 const issues = await issuesResponse.json()
                 
                 // endpoint always returns both issues and pull requests so we ignore the PRs
-                for (const issue of issues) {
+                for (const [index, issue] of issues.entries()) {
                     if (issue.pull_request) {
                         continue
                     }
                     
-
                     const transformedIssue = transformIssue(issue, repo, repoLanguage)
                     issuePool[transformedIssue.id] = transformedIssue // is having the ID is the best key name?
+                    console.log(`✅ Processed ${index}/${issues.length}: ${repo.ownerName}/${issue.repoName}`)
                 }
 
                 if (issues.length < 100) {
@@ -159,9 +164,6 @@ async function updateIssuePool() {
 
                 page++
             }
-
-            console.log(`✅ Processed ${i + 1}/${repoInfo.length}: ${repo.ownerName}/${repo.repoName}`)
-
         } catch (error) {
             console.error(`❌ Error processing ${repo.ownerName}/${repo.repoName}:`, error)
             continue
