@@ -1,0 +1,42 @@
+{
+    "contact": {
+        "URL": "https://github.com/IRSgov/",
+        "email": "lbi.fatca.ides@irs.gov",
+        "name": "Ortiz Hahnemann"
+    },
+    "date": {
+        "created": "2019-06-05",
+        "lastModified": "2019-06-05"
+    },
+    "downloadURL": "https://github.com/IRSgov/IDES-Data-Preparation-Dot-Net/zipball/master",
+    "homepageURL": "https://github.com/IRSgov/",
+    "disclaimerURL": "https://github.com/IRSgov/IDES-Data-Preparation-Dot-Net/blob/master/LICENSE",
+    "disclaimerText": "We waive copyright and related rights in the work worldwide through the CC0 1.0 Universal public domain dedication. Unless expressly stated otherwise, the person who associated a work with this deed makes no warranties about the work, and disclaims liability for all uses of the work, to the fullest extent permitted by applicable law. When using or citing the work, you should not imply endorsement by the author or the affirmer.",
+    "laborHours": 1,
+    "languages": [
+        "HTML",
+        ".NET"
+    ],
+    "name": "IDES-Data-Preparation-Dot-Net",
+    "version": "1.0.0",
+    "description": "The International Data Exchange Service (IDES) is a secure managed file transfer service that allows financial institutions and tax authorities to securely send information on financial accounts held by U.S. taxpayers in accordance with the Foreign Account Tax Compliance Act (FATCA). The IDES Data Preparation .NET project repository demonstrates a sample working application developed using .NET.",
+    "organization": "Internal Revenue Service(IRS)",
+    "permissions": {
+        "licenses": [
+            {
+                "name": "Creative Commons Zero v1.0 Universal",
+                "URL": "http://creativecommons.org/publicdomain/zero/1.0/"
+            }
+        ],
+        "usageType": "openSource"
+    },
+    "repositoryURL": "https://github.com/IRSgov/IDES-Data-Preparation-Dot-Net",
+    "status": "Development",
+    "tags": [
+        "IRS",
+        "FATCA",
+        "IDES",
+        "github"
+    ],
+    "vcs": "git"
+}

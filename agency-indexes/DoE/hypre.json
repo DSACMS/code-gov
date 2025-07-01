@@ -1,13 +1,13 @@
 {
     "contact": {
-        "email": "holdensanchez2@llnl.gov"
+        "email": "arroyo7@llnl.gov"
     },
     "date": {
-        "created": "2020-05-18",
-        "metadataLastUpdated": "2020-05-18"
+        "created": "2019-07-15",
+        "metadataLastUpdated": "2020-07-09"
     },
-    "description": "Parallel solvers for sparse linear systems featuring multigrid methods.",
-    "laborHours": 458036.8,
+    "description": "hypre is a library of high performance preconditioners and solvers featuring multigrid methods for the solution of large, sparse linear systems of equations on massively parallel computers.\n",
+    "laborHours": 0.0,
     "languages": [],
     "name": "hypre",
     "organization": "Lawrence Livermore National Laboratory (LLNL)",
@@ -15,17 +15,22 @@
         "exemptionText": null,
         "licenses": [
             {
-                "URL": "https://github.com/hypre-space/hypre/blob/master/COPYRIGHT",
-                "name": "Other"
+                "URL": "https://api.github.com/licenses/mit",
+                "name": "MIT"
+            },
+            {
+                "URL": "https://api.github.com/licenses/apache-2.0",
+                "name": "Apache-2.0"
             }
         ],
         "usageType": "openSource"
     },
-    "repositoryURL": "https://github.com/hypre-space/hypre",
-    "status": "Development",
+    "repositoryURL": "https://github.com/hypre-space/hypre/releases/tag/v2.17.0",
+    "status": "Production",
     "tags": [
         "DOE CODE",
         "Lawrence Livermore National Laboratory (LLNL)"
     ],
-    "vcs": "git"
+    "vcs": "git",
+    "version": "V2.17.0"
 }

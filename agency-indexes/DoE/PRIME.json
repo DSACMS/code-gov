@@ -1,34 +1,31 @@
 {
     "contact": {
-        "email": "copyrightadmin@sandia.gov"
+        "email": "david.long@pnnl.gov"
     },
     "date": {
-        "created": "2021-12-02",
-        "metadataLastUpdated": "2021-12-02"
+        "created": "2020-01-10",
+        "metadataLastUpdated": "2024-06-18"
     },
-    "description": "SAND2021-0565 O PRIME is a modeling framework designed for the real-time characterization and forecasting of partially observed epidemics. The method is designed to help guide medical resource allocation in the early epoch of the outbreak. Characterization is the estimation of infection spread parameters using daily counts of symptomatic patients. The estimation problem is posed as one of Bayesian inference and solved using a Markov Chain Monte Carlo technique. The framework can accommodate multiple epidemic waves and can help identify different disease dynamics at the regional, state, and country levels. Examples are provided using publicly available COVID-19 data. Sandia National Laboratories is a multimission laboratory managed and operated by National Technology & Engineering Solutions of Sandia, LLC, a wholly owned subsidiary of Honeywell International Inc., for the U.S. Department of Energy\u2019s National Nuclear Security Administration under contract DE-NA0003525.",
+    "description": "The testbed \u201cPRIME\u201d is implemented as a typical end-to-end SCADA hierarchy, from the substation to the control center,\nusing a combination of a well-known power system simulator, power system control, hardware-in-the-loop (HIL) and\nindustry grade EMS software. Other cyber-physical testbeds have similar modularity. However, they lack flexibility in\nswapping out the software used for EMS, FEP, and the hardware used for RTU and relays as the computational\nsubsystems and the input/output (I/O) subsystems are tightly coupled and integrated. They tend to be tied to a single\nvendor. In our approach, the power system simulator and the hardware driver (analog output subsystems to drive HIL) are\ndecoupled and are interconnected through communication protocols as an interface. This provides an additional level of\nmodularity to the architecture creating an interoperable environment where power system simulators and hardware could\nbe interchanged as long as they support streaming of measurements/commands.",
+    "homepageURL": "https://availabletechnologies.pnnl.gov",
     "laborHours": 0.0,
-    "languages": [
-        "Python"
-    ],
+    "languages": [],
     "name": "PRIME",
-    "organization": "Sandia National Laboratories (SNL)",
+    "organization": "Pacific Northwest National Laboratory (PNNL)",
     "permissions": {
-        "exemptionText": null,
+        "exemptionText": "This source code is restricted by patent and / or intellectual property law.",
         "licenses": [
             {
-                "URL": "https://api.github.com/licenses/bsd-2-clause",
-                "name": "BSD-2-Clause"
+                "URL": "https://availabletechnologies.pnnl.gov",
+                "name": "Other"
             }
         ],
-        "usageType": "openSource"
+        "usageType": "exemptByLaw"
     },
-    "repositoryURL": "https://github.com/sandialabs/PRIME",
-    "status": "Production",
+    "repositoryURL": "https://availabletechnologies.pnnl.gov",
+    "status": "Development",
     "tags": [
         "DOE CODE",
-        "Sandia National Laboratories (SNL)"
-    ],
-    "vcs": "git",
-    "version": "1"
+        "Pacific Northwest National Laboratory (PNNL)"
+    ]
 }

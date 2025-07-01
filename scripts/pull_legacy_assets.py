@@ -5,7 +5,7 @@ from util import merge_indexes, which_code_json_is_most_up_to_date
 
 # the commented out links are not valid or cant be found
 agencies_links = {
-    "DoA": "https://usda.gov/code.json",
+    "USDA": "https://usda.gov/code.json",
     # "Department of Commerce": "https://www.commerce.gov/code.json",
     "DoD": "https://www.code.mil/code.json",
     # "Department of Education": "https://ed.gov/code.json",
@@ -16,7 +16,7 @@ agencies_links = {
     # "Department of Justice": "https://www.justice.gov/d9/code.json",
     # "Department of Labor": "https://www.dol.gov/code.json",
     # "Department of Transportation": "https://www.transportation.gov/code.json",
-    "DoT": "https://www.treasury.gov/code.json",
+    "TREASURY": "https://www.treasury.gov/code.json",
     "VA": "https://www.va.gov/code.json",
     "EPA": "https://www.epa.gov/code.json",
     # "National Aeronautics and Space Administration": "https://code.nasa.gov/code.json",

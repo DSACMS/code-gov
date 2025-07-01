@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/WMLCI",
+    "organization": "usepa",
+    "description": "Waste Management Life Cycle Inventory Model Assembler and Calculator",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/WMLCI/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/WMLCI",
+    "downloadURL": "https://github.com/USEPA/WMLCI/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/WMLCI/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/WMLCI.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2025-04-28T18:26:06Z",
+        "lastModified": "2025-06-27T20:53:04Z",
+        "metadataLastUpdated": "2025-07-01T06:24:55.032Z"
+    }
+}
