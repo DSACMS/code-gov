@@ -1,0 +1,45 @@
+{
+    "contact": {
+        "URL": "https://fedspendingtransparency.github.io/",
+        "email": "Renata.Maziarz@fiscal.treasury.gov",
+        "name": "Renata Maziarz",
+        "phone": "(202) 874-5732"
+    },
+    "date": {
+        "created": "2019-06-05",
+        "lastModified": "2019-06-05"
+    },
+    "downloadURL": "https://github.com/fedspendingtransparency/data-act-broker-backend/archive/development.zip",
+    "homepageURL": "https://broker.usaspending.gov/",
+    "disclaimerURL": "https://github.com/fedspendingtransparency/data-act-broker-backend/blob/development/LICENSE",
+    "disclaimerText": "The Creative Commons CC0 Public Domain Dedication waives copyright interest in a work you've created and dedicates it to the world-wide public domain. Use CC0 to opt out of copyright entirely and ensure your work has the widest reach. As with the Unlicense and typical software licenses, CC0 disclaims warranties. CC0 is very similar to the Unlicense.",
+    "laborHours": 1,
+    "languages": [
+        "HTML",
+        "CSS",
+        "Python"
+    ],
+    "name": "data-act-broker-backend",
+    "version": "1.0.0",
+    "description": "The DATA Act broker backend is a collection of services that power the DATA Act's central data submission platform. To increase access to and use of federal financial data in order to strengthen government-wide decision-making and accountability through data transparency, the broker relies on hundreds of distinct data elements to tell the story of how federal dollars are spent.",
+    "organization": "Bureau of the Fiscal Service(BFS)",
+    "permissions": {
+        "licenses": [
+            {
+                "name": "Creative Commons Zero v1.0 Universal",
+                "URL": "http://creativecommons.org/publicdomain/zero/1.0/"
+            }
+        ],
+        "usageType": "openSource"
+    },
+    "repositoryURL": "https://github.com/fedspendingtransparency/data-act-broker-backend",
+    "status": "Development",
+    "tags": [
+        "spending",
+        "government",
+        "transparency",
+        "broker",
+        "github"
+    ],
+    "vcs": "git"
+}

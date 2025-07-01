@@ -19406,6 +19406,237 @@
                 "lastModified": "2023-10-17T17:14:36Z",
                 "metadataLastUpdated": "2025-06-04T06:24:54.166Z"
             }
+        },
+        {
+            "name": "USEPA/WMLCI",
+            "organization": "usepa",
+            "description": "Waste Management Life Cycle Inventory Model Assembler and Calculator",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/WMLCI/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/WMLCI",
+            "downloadURL": "https://github.com/USEPA/WMLCI/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/WMLCI/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/WMLCI.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-04-28T18:26:06Z",
+                "lastModified": "2025-06-27T20:53:04Z",
+                "metadataLastUpdated": "2025-07-01T06:24:55.032Z"
+            }
+        },
+        {
+            "name": "USEPA/clinical-nonclinical-concordance",
+            "organization": "usepa",
+            "description": "R script and input files for \"Quantitative and qualitative concordance between clinical and nonclinical toxicity data\"",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/clinical-nonclinical-concordance/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/clinical-nonclinical-concordance",
+            "downloadURL": "https://github.com/USEPA/clinical-nonclinical-concordance/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/clinical-nonclinical-concordance/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/clinical-nonclinical-concordance.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-04-18T17:52:08Z",
+                "lastModified": "2025-06-13T18:50:55Z",
+                "metadataLastUpdated": "2025-07-01T06:24:55.045Z"
+            }
+        },
+        {
+            "name": "USEPA/fegs-dashboard",
+            "organization": "usepa",
+            "description": "",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/fegs-dashboard/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/fegs-dashboard",
+            "downloadURL": "https://github.com/USEPA/fegs-dashboard/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/fegs-dashboard/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/fegs-dashboard.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2016-02-10T15:55:35Z",
+                "lastModified": "2021-08-04T23:16:04Z",
+                "metadataLastUpdated": "2025-07-01T06:24:54.699Z"
+            }
+        },
+        {
+            "name": "USEPA/gcam-kaya-decomposition",
+            "organization": "usepa",
+            "description": "Repository for R-code development of GHG emissions decomposition analysis using GCAM-GLIMPSE scenario outputs and Kaya Identity method",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/gcam-kaya-decomposition/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/gcam-kaya-decomposition",
+            "downloadURL": "https://github.com/USEPA/gcam-kaya-decomposition/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/gcam-kaya-decomposition/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/gcam-kaya-decomposition.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-05-20T17:40:24Z",
+                "lastModified": "2025-06-30T20:33:13Z",
+                "metadataLastUpdated": "2025-07-01T06:24:55.060Z"
+            }
+        },
+        {
+            "name": "USEPA/lfg-calc-py",
+            "organization": "usepa",
+            "description": "A landfill gas generation and emissions calculator in Python",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/lfg-calc-py/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/lfg-calc-py",
+            "downloadURL": "https://github.com/USEPA/lfg-calc-py/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/lfg-calc-py/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/lfg-calc-py.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-02-14T18:22:59Z",
+                "lastModified": "2025-06-25T18:05:06Z",
+                "metadataLastUpdated": "2025-07-01T06:24:55.013Z"
+            }
+        },
+        {
+            "name": "USEPA/rsig3d",
+            "organization": "usepa",
+            "description": "",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/rsig3d/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/rsig3d",
+            "downloadURL": "https://github.com/USEPA/rsig3d/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/rsig3d/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/rsig3d.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-04-29T19:39:39Z",
+                "lastModified": "2025-06-23T17:36:51Z",
+                "metadataLastUpdated": "2025-07-01T06:24:54.994Z"
+            }
+        },
+        {
+            "name": "USEPA/rsigserver",
+            "organization": "usepa",
+            "description": "",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/rsigserver/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/rsigserver",
+            "downloadURL": "https://github.com/USEPA/rsigserver/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/rsigserver/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/rsigserver.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-04-29T19:48:49Z",
+                "lastModified": "2025-06-25T18:56:10Z",
+                "metadataLastUpdated": "2025-07-01T06:24:55.031Z"
+            }
         }
     ]
 }
