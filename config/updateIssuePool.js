@@ -6,7 +6,10 @@ const CONFIG = {
     issueFilePath: path.resolve(__dirname, "../issue-pool.json"),
     regex: /https?:\/\/github\.com\/([^\/]+)\/([^\/]+)/,
     githubToken: process.env.GITHUB_TOKEN,
-    requiredLabel: 'code-gov'
+    requiredLabel: 'code-gov',
+    concurrentRepos: 6,  // processing 6 repos at once but need to find the sweetspot because at this rate, it takes 18 minutes for the entire script to run through codegov.json. the "bathtub curve" is what we have here and what we need to experiment with and solve 👀
+    rateLimitRemaining: 5000,
+    rateLimitReset: Date.now
 }
 
 // #region - Helper Functions
@@ -19,11 +22,29 @@ const getHeaders = () => {
     return HEADERS
 }
 
+async function fetchWithRateLimit(url, options = {}) {
+    if (CONFIG.rateLimitRemaining <= 10 && Date.now() < CONFIG.rateLimitReset) {
+        const waitTime = CONFIG.rateLimitReset - Date.now() + 1000 // add 1 second buffer
+        console.log(`Rate limit low (${CONFIG.rateLimitRemaining} remaining). Waiting ${Math.round(waitTime/1000)}s...`)
+        await new Promise(resolve => setTimeout(resolve, waitTime))
+    }
+
+    const response = await fetch(url, options)
+    
+    const remainingHeader = response.headers.get('X-RateLimit-Remaining')
+    const resetHeader = response.headers.get('X-RateLimit-Reset')
+    
+    if (remainingHeader) CONFIG.rateLimitRemaining = parseInt(remainingHeader)
+    if (resetHeader) CONFIG.rateLimitReset = parseInt(resetHeader) * 1000
+    
+    return response
+}
+
 async function getRepoInfo() { // dont know how i feel about this double loop setup...
     let repoInfo = []
 
     try {
-        const content = await fs.readFile(CONFIG.repoFilePath, "utf-8") // filter by tier 3 maturity to get the projects that truly want outside help 
+        const content = await fs.readFile(CONFIG.repoFilePath, "utf-8") 
         const jsonData = JSON.parse(content)
 
         for (const agencyKey in jsonData) {
@@ -34,12 +55,17 @@ async function getRepoInfo() { // dont know how i feel about this double loop se
 
                     if (organization.repositoryURL) {
                         const match = organization.repositoryURL.match(CONFIG.regex)
-                        const [url, owner, repo] = match
 
-                        repoInfo.push({
-                            ownerName: owner,
-                            repoName: repo
-                        })
+                        if (match) {
+                            const [url, owner, repo] = match
+    
+                            repoInfo.push({
+                                ownerName: owner,
+                                repoName: repo
+                            })
+                        } else {
+                            console.warn(`No match found for URL: ${organization.repositoryURL}`)
+                        }
                     }
                 }
             }
@@ -107,64 +133,83 @@ function transformIssue(issue, repo, repoLanguage) {
     }
 }
 
+async function processSingleRepository(repo, headers) {
+    const repoIssues = {}
+    
+    try {
+        const repoUrl = `https://api.github.com/repos/${repo.ownerName}/${repo.repoName}`
+        const repoResponse = await fetchWithRateLimit(repoUrl, { headers })
+
+        if (!repoResponse.ok) {
+            console.error(`Failed to fetch repo info for ${repo.ownerName}/${repo.repoName}: ${repoResponse.status}`)
+            return repoIssues
+        }
+
+        const repoData = await repoResponse.json()
+        const repoLanguage = repoData.language || ""
+
+        let page = 1
+        let hasMore = true
+
+        while (hasMore) {
+            const issuesUrl = `https://api.github.com/repos/${repo.ownerName}/${repo.repoName}/issues?page=${page}&per_page=100&state=open&labels=${CONFIG.requiredLabel}`
+            const issuesResponse = await fetchWithRateLimit(issuesUrl, { headers })
+
+            if (!issuesResponse.ok) {
+                console.error(`Failed to fetch issues for ${repo.ownerName}/${repo.repoName}: ${issuesResponse.status}`)
+                break
+            }
+
+            const issues = await issuesResponse.json()
+            
+            // endpoint always returns both issues and pull requests so we ignore the PRs
+            for (const [index, issue] of issues.entries()) {
+                if (issue.pull_request) {
+                    continue
+                }
+                
+                const transformedIssue = transformIssue(issue, repo, repoLanguage)
+                repoIssues[transformedIssue.id] = transformedIssue // is having the ID is the best key name?
+                console.log(`✅ Processed ${index + 1}/${issues.length}: ${repo.ownerName}/${repo.repoName}`)
+            }
+
+            if (issues.length < 100) {
+                hasMore = false
+            }
+
+            page++
+        }
+    } catch (error) {
+        console.error(`❌ Error processing ${repo.ownerName}/${repo.repoName}:`, error)
+    }
+
+    return repoIssues
+}
+
 // #region - Main Function
 async function updateIssuePool() {
     const issuePool = {}
     const repoInfo = await getRepoInfo()
     const headers = getHeaders()
 
-    for (let i = 0; i < repoInfo.length; i++) { // switch to a forOf loop here?
-        const repo = repoInfo[i]
-
-        try {
-            const repoUrl = `https://api.github.com/repos/${repo.ownerName}/${repo.repoName}`
-            const repoResponse = await fetch(repoUrl, { headers })
-
-            if (!repoResponse.ok) {
-                console.error(`Failed to fetch repo info for ${repo.ownerName}/${repo.repoName}: ${repoResponse.status}`)
-                continue
+    // process repositories in chunks of 3 for parallel processing
+    for (let i = 0; i < repoInfo.length; i += CONFIG.concurrentRepos) {
+        const chunk = repoInfo.slice(i, i + CONFIG.concurrentRepos)
+        console.log(`Processing chunk ${Math.floor(i/CONFIG.concurrentRepos) + 1}/${Math.ceil(repoInfo.length/CONFIG.concurrentRepos)} (${chunk.length} repos)`)
+        
+        const chunkPromises = chunk.map(repo => processSingleRepository(repo, headers))
+        const chunkResults = await Promise.allSettled(chunkPromises)
+        
+        chunkResults.forEach((result, index) => {
+            if (result.status === 'fulfilled') {
+                Object.assign(issuePool, result.value)
+            } else {
+                console.error(`Failed ${chunk[index].ownerName}/${chunk[index].repoName}:`, result.reason)
             }
+        })
 
-            const repoData = await repoResponse.json()
-            const repoLanguage = repoData.language || ""
-
-            let page = 1
-            let hasMore = true
-
-            while (hasMore) {
-                const issuesUrl = `https://api.github.com/repos/${repo.ownerName}/${repo.repoName}/issues?page=${page}&per_page=100&state=open&labels=${CONFIG.requiredLabel}`
-                const issuesResponse = await fetch(issuesUrl, { headers })
-
-                if (!issuesResponse.ok) {
-                    console.error(`Failed to fetch issues for ${repo.ownerName}/${repo.repoName}: ${issuesResponse.status}`)
-                    break
-                }
-
-                const issues = await issuesResponse.json()
-                
-                // endpoint always returns both issues and pull requests so we ignore the PRs
-                for (const issue of issues) {
-                    if (issue.pull_request) {
-                        continue
-                    }
-                    
-
-                    const transformedIssue = transformIssue(issue, repo, repoLanguage)
-                    issuePool[transformedIssue.id] = transformedIssue // is having the ID is the best key name?
-                }
-
-                if (issues.length < 100) {
-                    hasMore = false
-                }
-
-                page++
-            }
-
-            console.log(`✅ Processed ${i + 1}/${repoInfo.length}: ${repo.ownerName}/${repo.repoName}`)
-
-        } catch (error) {
-            console.error(`❌ Error processing ${repo.ownerName}/${repo.repoName}:`, error)
-            continue
+        if (i + CONFIG.concurrentRepos < repoInfo.length) {
+            await new Promise(resolve => setTimeout(resolve, 1000))
         }
     }
 

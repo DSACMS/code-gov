@@ -3,7 +3,6 @@ const path = require('path')
 
 // these will always stay constant
 const CONFIG = {
-  testAgencyDirectory: path.resolve(__dirname, "../test-agency-indexes"),
   agencyDirectory: path.resolve(__dirname, "../agency-indexes"),
   outputFile: path.resolve(__dirname, "../codegov.json"),
   regex: /^(.*?)-.*\.json$/  
@@ -14,17 +13,16 @@ i focused on the fact that the agencyDirectory will always contain jsons with th
 but that prove to be a disadvantage down the road */
 
 // updates the codegov.json file with new data found from ./agency-indexes
-async function updateCodeGov(isTesting = false) {
+async function updateCodeGov() {
   try {
     const updatedJSON = {}
-    directoryPath = isTesting === true ? CONFIG.testAgencyDirectory : CONFIG.agencyDirectory
 
     // read all files in the directory
-    const filenames = await fs.readdir(directoryPath)
+    const filenames = await fs.readdir(CONFIG.agencyDirectory)
     
     // we know that the directory will only contain json files so dont need to check for non jsons
     for (const file of filenames) {
-      const filePath = path.join(directoryPath, file)
+      const filePath = path.join(CONFIG.agencyDirectory, file)
       
       try {
         const content = await fs.readFile(filePath, "utf-8")
@@ -51,4 +49,4 @@ async function updateCodeGov(isTesting = false) {
   }
 }
 
-updateCodeGov(isTesting = true)
+updateCodeGov()
