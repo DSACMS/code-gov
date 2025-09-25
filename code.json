@@ -1,33 +1,33 @@
 {
-  "name": "ospo-guide",
-  "description": "Open Source Program Office Guide for CMS.gov",
-  "longDescription": "Source of truth for all processes that take place within the Open Source Program Office.",
-  "status": "Production",
+  "name": "code-gov",
+  "description": "Github pages site that provides an inventory of federal government software projects",
+  "longDescription": "Code-gov is a redux project aiming to replicate the functionality provided by code.gov. This site aims to provide a software inventory and informational resource about open source projects throughout the federal government. This site is populated through GitHub actions and Python scripts that save data that is used by a static eleventy site that replicates the functionality of the old code.gov.",
+  "status": "Active Development",
   "permissions": {
     "license": [
       {
         "name": "CC0 1.0 Universal",
-        "URL": "https://github.com/DSACMS/ospo-guide/blob/main/LICENSE"
+        "URL": "https://github.com/DSACMS/code-gov/blob/main/LICENSE"
       }
     ],
     "usageType": "openSource",
     "exemptionText": ""
   },
   "organization": "Centers for Medicare & Medicaid Services",
-  "repositoryURL": "https://github.com/DSACMS/ospo-guide",
+  "repositoryURL": "https://github.com/DSACMS/code-gov",
   "vcs": "git",
-  "laborHours": 2992,
+  "laborHours": 37500,
   "platforms": ["web"],
   "categories": ["knowledge-management", "document-management"],
   "softwareType": "standalone/web",
-  "languages": ["Markdown"],
+  "languages": ["Markdown","Javascript","Python"],
   "maintenance": "internal",
   "date": {
-    "created": "2024-04-03T20:47:21Z",
-    "lastModified": "2025-02-11T17:21:41Z",
-    "metaDataLastUpdated": "2025-02-11T17:22:34.291Z"
+    "created": "2025-05-01T18:39:26Z",
+    "lastModified": "2025-09-24T14:28:42Z",
+    "metaDataLastUpdated": "2025-09-25T17:22:34.291Z"
   },
-  "tags": ["OSPO", "guide", "documentation"],
+  "tags": ["OSPO", "inventory", "documentation"],
   "contact": {
     "email": "opensource@cms.hhs.gov",
     "name": "CMS Open Source Team"
