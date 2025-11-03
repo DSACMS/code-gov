@@ -3,15 +3,15 @@
   "version": "",
   "description": "Github pages site that provides an inventory of federal government software projects",
   "longDescription": "Code-gov is a redux project aiming to replicate the functionality provided by code.gov. This site aims to provide a software inventory and informational resource about open source projects throughout the federal government. This site is populated through GitHub actions and Python scripts that save data that is used by a static eleventy site that replicates the functionality of the old code.gov.",
-  "status": "Active Development",
+  "status": "Development",
   "permissions": {
-    "license": [
+    "licenses": [
       {
-        "name": "CC0 1.0 Universal",
+        "name": "CC0-1.0",
         "URL": "https://github.com/DSACMS/code-gov/blob/main/LICENSE"
       }
     ],
-    "usageType": "openSource",
+    "usageType": ["openSource"],
     "exemptionText": ""
   },
   "organization": "Centers for Medicare & Medicaid Services",
@@ -69,15 +69,15 @@
   "localisation": false,
   "repositoryType": "standards",
   "userInput": false,
-  "fismaLevel": "Low",
+  "fismaLevel": "low",
   "group": "CMS/OA/DSAC",
   "projects": [],
   "systems": [],
   "subsetInHealthcare": [
-    "Operational"
+    "operational"
   ],
   "userType": [
-    "Government"
+    "government"
   ],
   "maturityModelTier": 2
 }
