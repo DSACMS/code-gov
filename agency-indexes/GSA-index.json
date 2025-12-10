@@ -4,5 +4,6 @@
   "measurementType": {
     "method": "projects"
   },
-  "releases": []
-}
+  "releases": [
+    {
+      "organization": 
