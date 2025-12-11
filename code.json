@@ -11,7 +11,9 @@
         "URL": "https://github.com/DSACMS/code-gov/blob/main/LICENSE"
       }
     ],
-    "usageType": ["openSource"],
+    "usageType": [
+      "openSource"
+    ],
     "exemptionText": ""
   },
   "organization": "Centers for Medicare & Medicaid Services",
@@ -23,7 +25,7 @@
   "disclaimerURL": "",
   "disclaimerText": "",
   "vcs": "git",
-  "laborHours": 37504,
+  "laborHours": 37505,
   "reuseFrequency": {
     "forks": 2,
     "clones": 0
@@ -52,13 +54,14 @@
   "partners": [],
   "date": {
     "created": "2025-05-01T18:39:26Z",
-    "lastModified": "2025-11-03T22:23:14Z",
-    "metadataLastUpdated": "2025-11-03T22:24:28.025Z"
+    "lastModified": "2025-11-03T22:29:19Z",
+    "metadataLastUpdated": "2025-12-01T02:01:05.212Z"
   },
   "tags": [
     "OSPO",
     "inventory",
-    "documentation"
+    "documentation",
+    "featured"
   ],
   "contact": {
     "email": "opensource@cms.hhs.gov",
@@ -71,7 +74,7 @@
   "userInput": false,
   "fismaLevel": "low",
   "group": "CMS/OA/DSAC",
-  "projects": [],
+  "projects": ["share-it-act"],
   "systems": [],
   "subsetInHealthcare": [
     "operational"
