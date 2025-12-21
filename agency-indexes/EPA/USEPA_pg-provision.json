@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/pg-provision",
+    "organization": "usepa",
+    "description": "This is a read only mirror of canonical source: https://github.com/Scr1ptcat/pg-provision. Please submit issues/PRs upstream.",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/pg-provision/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/pg-provision",
+    "downloadURL": "https://github.com/USEPA/pg-provision/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/pg-provision/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/pg-provision.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2025-09-23T20:03:55Z",
+        "lastModified": "2025-10-01T14:49:33Z",
+        "metadataLastUpdated": "2025-12-21T06:24:57.822Z"
+    }
+}

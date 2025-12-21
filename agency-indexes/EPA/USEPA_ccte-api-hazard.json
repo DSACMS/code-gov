@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/ccte-api-hazard",
+    "organization": "usepa",
+    "description": "US EPA's CTX Hazard API, available at: https://comptox.epa.gov/ctx-api/docs/hazard.html",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/ccte-api-hazard/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/ccte-api-hazard",
+    "downloadURL": "https://github.com/USEPA/ccte-api-hazard/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/ccte-api-hazard/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/ccte-api-hazard.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2022-12-08T20:20:45Z",
+        "lastModified": "2025-12-16T14:23:12Z",
+        "metadataLastUpdated": "2025-12-21T06:24:57.777Z"
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/ccte-api-bioactivity",
+    "organization": "usepa",
+    "description": "US EPA's CTX Bioactivity API, available at: https://comptox.epa.gov/ctx-api/docs/bioactivity.html",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/ccte-api-bioactivity/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/ccte-api-bioactivity",
+    "downloadURL": "https://github.com/USEPA/ccte-api-bioactivity/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/ccte-api-bioactivity/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/ccte-api-bioactivity.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2022-12-08T20:22:47Z",
+        "lastModified": "2025-12-15T18:28:44Z",
+        "metadataLastUpdated": "2025-12-21T06:24:57.818Z"
+    }
+}

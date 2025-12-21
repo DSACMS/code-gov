@@ -19637,6 +19637,1821 @@
                 "lastModified": "2025-06-25T18:56:10Z",
                 "metadataLastUpdated": "2025-07-01T06:24:55.031Z"
             }
+        },
+        {
+            "name": "USEPA/BLL-Predictive-Modeling",
+            "organization": "usepa",
+            "description": "",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/BLL-Predictive-Modeling/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/BLL-Predictive-Modeling",
+            "downloadURL": "https://github.com/USEPA/BLL-Predictive-Modeling/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/BLL-Predictive-Modeling/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/BLL-Predictive-Modeling.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-03-17T14:36:31Z",
+                "lastModified": "2025-09-25T15:11:48Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.788Z"
+            }
+        },
+        {
+            "name": "USEPA/Block_Check_Tool",
+            "organization": "usepa",
+            "description": "",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/Block_Check_Tool/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/Block_Check_Tool",
+            "downloadURL": "https://github.com/USEPA/Block_Check_Tool/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/Block_Check_Tool/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/Block_Check_Tool.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-10-16T20:45:47Z",
+                "lastModified": "2025-10-20T01:11:04Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.606Z"
+            }
+        },
+        {
+            "name": "USEPA/CBW-cont-stream-temp-QC",
+            "organization": "usepa",
+            "description": "",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/CBW-cont-stream-temp-QC/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/CBW-cont-stream-temp-QC",
+            "downloadURL": "https://github.com/USEPA/CBW-cont-stream-temp-QC/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/CBW-cont-stream-temp-QC/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/CBW-cont-stream-temp-QC.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-05-30T16:51:16Z",
+                "lastModified": "2025-08-05T19:02:23Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.830Z"
+            }
+        },
+        {
+            "name": "USEPA/CBW-upst-shade-buffer-Calc",
+            "organization": "usepa",
+            "description": "",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/CBW-upst-shade-buffer-Calc/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/CBW-upst-shade-buffer-Calc",
+            "downloadURL": "https://github.com/USEPA/CBW-upst-shade-buffer-Calc/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/CBW-upst-shade-buffer-Calc/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/CBW-upst-shade-buffer-Calc.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-06-02T19:07:43Z",
+                "lastModified": "2025-08-05T18:12:09Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.600Z"
+            }
+        },
+        {
+            "name": "USEPA/CHAPPIE",
+            "organization": "usepa",
+            "description": "Community Hazard-scape and Amenity Placement for Providing Improved Endpoints",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/CHAPPIE/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/CHAPPIE",
+            "downloadURL": "https://github.com/USEPA/CHAPPIE/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/CHAPPIE/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/CHAPPIE.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2023-08-23T15:29:52Z",
+                "lastModified": "2025-12-17T23:06:41Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.608Z"
+            }
+        },
+        {
+            "name": "USEPA/CompTox-ExpoCast-HTTKQSPRs",
+            "organization": "usepa",
+            "description": "",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/CompTox-ExpoCast-HTTKQSPRs/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/CompTox-ExpoCast-HTTKQSPRs",
+            "downloadURL": "https://github.com/USEPA/CompTox-ExpoCast-HTTKQSPRs/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/CompTox-ExpoCast-HTTKQSPRs/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/CompTox-ExpoCast-HTTKQSPRs.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2024-05-28T13:09:49Z",
+                "lastModified": "2025-09-12T19:04:14Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.809Z"
+            }
+        },
+        {
+            "name": "USEPA/CompTox-ToxCast-mixtures",
+            "organization": "usepa",
+            "description": "This repository accompanies pilot work to implement mathematical models of mixtures responses from ToxCast bioactivity data.",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/CompTox-ToxCast-mixtures/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/CompTox-ToxCast-mixtures",
+            "downloadURL": "https://github.com/USEPA/CompTox-ToxCast-mixtures/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/CompTox-ToxCast-mixtures/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/CompTox-ToxCast-mixtures.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-02-04T22:58:16Z",
+                "lastModified": "2025-07-15T21:22:40Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.799Z"
+            }
+        },
+        {
+            "name": "USEPA/CvTdbLoad",
+            "organization": "usepa",
+            "description": "R package/scripts to normalize CvT data from templates and load to the database",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/CvTdbLoad/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/CvTdbLoad",
+            "downloadURL": "https://github.com/USEPA/CvTdbLoad/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/CvTdbLoad/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/CvTdbLoad.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2023-04-13T19:54:26Z",
+                "lastModified": "2025-09-18T15:18:25Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.754Z"
+            }
+        },
+        {
+            "name": "USEPA/D4EM",
+            "organization": "usepa",
+            "description": "",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/D4EM/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/D4EM",
+            "downloadURL": "https://github.com/USEPA/D4EM/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/D4EM/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/D4EM.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2015-04-21T17:42:13Z",
+                "lastModified": "2025-11-19T16:07:31Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.204Z"
+            }
+        },
+        {
+            "name": "USEPA/EAOP-Viz",
+            "organization": "usepa",
+            "description": "Shiny app to visualize and score emergent AOPs",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/EAOP-Viz/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/EAOP-Viz",
+            "downloadURL": "https://github.com/USEPA/EAOP-Viz/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/EAOP-Viz/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/EAOP-Viz.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-07-18T15:17:01Z",
+                "lastModified": "2025-08-04T21:28:18Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.601Z"
+            }
+        },
+        {
+            "name": "USEPA/EDD-PDF-combiner-tool",
+            "organization": "usepa",
+            "description": "",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/EDD-PDF-combiner-tool/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/EDD-PDF-combiner-tool",
+            "downloadURL": "https://github.com/USEPA/EDD-PDF-combiner-tool/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/EDD-PDF-combiner-tool/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/EDD-PDF-combiner-tool.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-08-04T20:49:25Z",
+                "lastModified": "2025-09-29T21:08:20Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.841Z"
+            }
+        },
+        {
+            "name": "USEPA/EDD_Test",
+            "organization": "usepa",
+            "description": "",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/EDD_Test/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/EDD_Test",
+            "downloadURL": "https://github.com/USEPA/EDD_Test/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/EDD_Test/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/EDD_Test.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-09-18T11:41:50Z",
+                "lastModified": "2025-09-23T18:38:33Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.837Z"
+            }
+        },
+        {
+            "name": "USEPA/Extremes_by_Degree",
+            "organization": "usepa",
+            "description": "This repository contains the code and data for a framework that projects future changes in extreme weather events by degree of temperature change",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/Extremes_by_Degree/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/Extremes_by_Degree",
+            "downloadURL": "https://github.com/USEPA/Extremes_by_Degree/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/Extremes_by_Degree/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/Extremes_by_Degree.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-04-22T15:28:51Z",
+                "lastModified": "2025-09-30T21:12:32Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.780Z"
+            }
+        },
+        {
+            "name": "USEPA/FTT-Posit",
+            "organization": "usepa",
+            "description": "",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/FTT-Posit/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/FTT-Posit",
+            "downloadURL": "https://github.com/USEPA/FTT-Posit/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/FTT-Posit/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/FTT-Posit.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-12-18T16:52:43Z",
+                "lastModified": "2025-12-18T22:44:33Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.836Z"
+            }
+        },
+        {
+            "name": "USEPA/FTT-R",
+            "organization": "usepa",
+            "description": "",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/FTT-R/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/FTT-R",
+            "downloadURL": "https://github.com/USEPA/FTT-R/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/FTT-R/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/FTT-R.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2023-04-11T13:42:37Z",
+                "lastModified": "2025-12-18T22:05:14Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.627Z"
+            }
+        },
+        {
+            "name": "USEPA/FTT-TKTD",
+            "organization": "usepa",
+            "description": "",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/FTT-TKTD/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/FTT-TKTD",
+            "downloadURL": "https://github.com/USEPA/FTT-TKTD/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/FTT-TKTD/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/FTT-TKTD.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-08-19T14:29:52Z",
+                "lastModified": "2025-08-26T22:11:07Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.836Z"
+            }
+        },
+        {
+            "name": "USEPA/GLharmonizeR",
+            "organization": "usepa",
+            "description": "An R package to fetch and harmonize federal Great Lakes water quality data",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/GLharmonizeR/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/GLharmonizeR",
+            "downloadURL": "https://github.com/USEPA/GLharmonizeR/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/GLharmonizeR/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/GLharmonizeR.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2023-04-04T15:18:39Z",
+                "lastModified": "2025-08-25T16:56:36Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.753Z"
+            }
+        },
+        {
+            "name": "USEPA/ProxTool",
+            "organization": "usepa",
+            "description": "A stand-alone population proximity application that produces some of the HEM Demographic Assessment outputs without the need for all the HEM machinery. This branch is using the Great Circle formula to compute distances between facility locations (lat/lon) and census block centroids (lat/lon).",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/ProxTool/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/ProxTool",
+            "downloadURL": "https://github.com/USEPA/ProxTool/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/ProxTool/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/ProxTool.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-10-17T13:47:28Z",
+                "lastModified": "2025-10-20T13:10:55Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.796Z"
+            }
+        },
+        {
+            "name": "USEPA/R4-WQ-Modeling-Tools",
+            "organization": "usepa",
+            "description": "Watershed Modeling Tools developed and supported by EPA Region 4",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/R4-WQ-Modeling-Tools/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/R4-WQ-Modeling-Tools",
+            "downloadURL": "https://github.com/USEPA/R4-WQ-Modeling-Tools/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/R4-WQ-Modeling-Tools/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/R4-WQ-Modeling-Tools.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-06-27T17:09:10Z",
+                "lastModified": "2025-11-05T21:45:50Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.835Z"
+            }
+        },
+        {
+            "name": "USEPA/SERTO",
+            "organization": "usepa",
+            "description": "Stormwater optimization and emergency response tool",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/SERTO/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/SERTO",
+            "downloadURL": "https://github.com/USEPA/SERTO/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/SERTO/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/SERTO.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2024-09-12T13:38:10Z",
+                "lastModified": "2025-08-11T18:42:02Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.622Z"
+            }
+        },
+        {
+            "name": "USEPA/Sewersheds",
+            "organization": "usepa",
+            "description": "Repository for code related to work on modeling sewershed boundaries by ORD and OW",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/Sewersheds/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/Sewersheds",
+            "downloadURL": "https://github.com/USEPA/Sewersheds/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/Sewersheds/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/Sewersheds.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2024-03-16T15:31:17Z",
+                "lastModified": "2025-07-18T13:20:02Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.809Z"
+            }
+        },
+        {
+            "name": "USEPA/TADACommunityHub",
+            "organization": "usepa",
+            "description": "A collaborative hub where TADA users share and maintain information for custom workflows (e.g., state, tribal, territory, EPA, or other entities). For example, it includes user-contributed criteria and methodologies templates to support reproducible and efficient analyses.",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/TADACommunityHub/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/TADACommunityHub",
+            "downloadURL": "https://github.com/USEPA/TADACommunityHub/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/TADACommunityHub/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/TADACommunityHub.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-10-16T18:43:39Z",
+                "lastModified": "2025-12-19T22:14:26Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.821Z"
+            }
+        },
+        {
+            "name": "USEPA/Water-Infrastructure-and-Capacity-Assessment-Tool",
+            "organization": "usepa",
+            "description": "",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/Water-Infrastructure-and-Capacity-Assessment-Tool/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/Water-Infrastructure-and-Capacity-Assessment-Tool",
+            "downloadURL": "https://github.com/USEPA/Water-Infrastructure-and-Capacity-Assessment-Tool/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/Water-Infrastructure-and-Capacity-Assessment-Tool/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/Water-Infrastructure-and-Capacity-Assessment-Tool.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-07-08T13:12:46Z",
+                "lastModified": "2025-12-01T21:04:42Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.792Z"
+            }
+        },
+        {
+            "name": "USEPA/caers-public",
+            "organization": "usepa",
+            "description": "Combined Air Emissions Reporting System ",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/caers-public/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/caers-public",
+            "downloadURL": "https://github.com/USEPA/caers-public/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/caers-public/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/caers-public.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-07-22T19:47:22Z",
+                "lastModified": "2025-08-12T13:23:07Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.602Z"
+            }
+        },
+        {
+            "name": "USEPA/ccte-api-bioactivity",
+            "organization": "usepa",
+            "description": "US EPA's CTX Bioactivity API, available at: https://comptox.epa.gov/ctx-api/docs/bioactivity.html",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/ccte-api-bioactivity/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/ccte-api-bioactivity",
+            "downloadURL": "https://github.com/USEPA/ccte-api-bioactivity/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/ccte-api-bioactivity/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/ccte-api-bioactivity.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2022-12-08T20:22:47Z",
+                "lastModified": "2025-12-15T18:28:44Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.818Z"
+            }
+        },
+        {
+            "name": "USEPA/ccte-api-chemical",
+            "organization": "usepa",
+            "description": "US EPA's CTX Chemical API, available at: https://comptox.epa.gov/ctx-api/docs/chemical.html",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/ccte-api-chemical/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/ccte-api-chemical",
+            "downloadURL": "https://github.com/USEPA/ccte-api-chemical/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/ccte-api-chemical/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/ccte-api-chemical.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2022-12-08T17:22:25Z",
+                "lastModified": "2025-12-18T17:52:32Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.817Z"
+            }
+        },
+        {
+            "name": "USEPA/ccte-api-docs",
+            "organization": "usepa",
+            "description": "US EPA's CTX APIs Documentation",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/ccte-api-docs/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/ccte-api-docs",
+            "downloadURL": "https://github.com/USEPA/ccte-api-docs/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/ccte-api-docs/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/ccte-api-docs.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2022-12-12T17:46:09Z",
+                "lastModified": "2025-12-15T15:18:51Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.352Z"
+            }
+        },
+        {
+            "name": "USEPA/ccte-api-exposure",
+            "organization": "usepa",
+            "description": "US EPA's CTX Exposure API, available at: https://comptox.epa.gov/ctx-api/docs/exposure.html",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/ccte-api-exposure/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/ccte-api-exposure",
+            "downloadURL": "https://github.com/USEPA/ccte-api-exposure/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/ccte-api-exposure/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/ccte-api-exposure.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2023-06-12T17:04:56Z",
+                "lastModified": "2025-12-15T18:25:29Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.818Z"
+            }
+        },
+        {
+            "name": "USEPA/ccte-api-file",
+            "organization": "usepa",
+            "description": "CCTE Public API - it is for chemical files without any restriction of API key",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/ccte-api-file/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/ccte-api-file",
+            "downloadURL": "https://github.com/USEPA/ccte-api-file/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/ccte-api-file/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/ccte-api-file.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2023-07-10T23:17:55Z",
+                "lastModified": "2023-12-20T17:06:35Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.606Z"
+            }
+        },
+        {
+            "name": "USEPA/ccte-api-hazard",
+            "organization": "usepa",
+            "description": "US EPA's CTX Hazard API, available at: https://comptox.epa.gov/ctx-api/docs/hazard.html",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/ccte-api-hazard/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/ccte-api-hazard",
+            "downloadURL": "https://github.com/USEPA/ccte-api-hazard/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/ccte-api-hazard/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/ccte-api-hazard.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2022-12-08T20:20:45Z",
+                "lastModified": "2025-12-16T14:23:12Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.777Z"
+            }
+        },
+        {
+            "name": "USEPA/ccte-api-karate",
+            "organization": "usepa",
+            "description": "",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/ccte-api-karate/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/ccte-api-karate",
+            "downloadURL": "https://github.com/USEPA/ccte-api-karate/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/ccte-api-karate/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/ccte-api-karate.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2023-12-12T18:18:43Z",
+                "lastModified": "2025-09-09T19:30:56Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.761Z"
+            }
+        },
+        {
+            "name": "USEPA/dcap_method",
+            "organization": "usepa",
+            "description": "Database calibrated assessment process (DCAP) code, quantitative methods only. (Official Code) ",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/dcap_method/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/dcap_method",
+            "downloadURL": "https://github.com/USEPA/dcap_method/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/dcap_method/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/dcap_method.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-07-11T12:16:39Z",
+                "lastModified": "2025-08-13T19:37:31Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.831Z"
+            }
+        },
+        {
+            "name": "USEPA/elevatr",
+            "organization": "usepa",
+            "description": "An R package for accessing elevation data",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/elevatr/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/elevatr",
+            "downloadURL": "https://github.com/USEPA/elevatr/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/elevatr/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/elevatr.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2016-08-09T20:19:18Z",
+                "lastModified": "2025-09-09T14:29:41Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.218Z"
+            }
+        },
+        {
+            "name": "USEPA/emanifest-data-upload",
+            "organization": "usepa",
+            "description": "",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/emanifest-data-upload/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/emanifest-data-upload",
+            "downloadURL": "https://github.com/USEPA/emanifest-data-upload/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/emanifest-data-upload/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/emanifest-data-upload.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-11-07T17:53:21Z",
+                "lastModified": "2025-12-03T14:07:29Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.943Z"
+            }
+        },
+        {
+            "name": "USEPA/emanifest-workflow",
+            "organization": "usepa",
+            "description": "",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/emanifest-workflow/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/emanifest-workflow",
+            "downloadURL": "https://github.com/USEPA/emanifest-workflow/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/emanifest-workflow/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/emanifest-workflow.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-10-28T17:31:33Z",
+                "lastModified": "2025-12-19T18:58:54Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.834Z"
+            }
+        },
+        {
+            "name": "USEPA/fia-rct",
+            "organization": "usepa",
+            "description": "R scripts and data for \"impacts of climate, atmospheric deposition, and competition on canopy recruitment in eastern United States Forests\"",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/fia-rct/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/fia-rct",
+            "downloadURL": "https://github.com/USEPA/fia-rct/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/fia-rct/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/fia-rct.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-04-08T12:38:43Z",
+                "lastModified": "2025-09-08T12:51:44Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.601Z"
+            }
+        },
+        {
+            "name": "USEPA/globalAQ_rft",
+            "organization": "usepa",
+            "description": "",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/globalAQ_rft/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/globalAQ_rft",
+            "downloadURL": "https://github.com/USEPA/globalAQ_rft/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/globalAQ_rft/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/globalAQ_rft.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-02-03T16:36:22Z",
+                "lastModified": "2025-09-29T16:16:33Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.800Z"
+            }
+        },
+        {
+            "name": "USEPA/hfc-allowances",
+            "organization": "usepa",
+            "description": "",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/hfc-allowances/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/hfc-allowances",
+            "downloadURL": "https://github.com/USEPA/hfc-allowances/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/hfc-allowances/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/hfc-allowances.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-09-04T20:07:27Z",
+                "lastModified": "2025-09-30T22:10:53Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.793Z"
+            }
+        },
+        {
+            "name": "USEPA/hwip",
+            "organization": "usepa",
+            "description": "Hazardous Waste Information Platform",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/hwip/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/hwip",
+            "downloadURL": "https://github.com/USEPA/hwip/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/hwip/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/hwip.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-08-21T20:22:49Z",
+                "lastModified": "2025-12-19T18:44:26Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.835Z"
+            }
+        },
+        {
+            "name": "USEPA/hwip-help.github.io",
+            "organization": "usepa",
+            "description": "Help Documentation",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/hwip-help.github.io/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/hwip-help.github.io",
+            "downloadURL": "https://github.com/USEPA/hwip-help.github.io/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/hwip-help.github.io/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/hwip-help.github.io.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-08-26T19:46:51Z",
+                "lastModified": "2025-08-26T19:46:51Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.794Z"
+            }
+        },
+        {
+            "name": "USEPA/invdb-ms",
+            "organization": "usepa",
+            "description": "",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/invdb-ms/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/invdb-ms",
+            "downloadURL": "https://github.com/USEPA/invdb-ms/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/invdb-ms/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/invdb-ms.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-04-03T19:32:15Z",
+                "lastModified": "2025-12-05T16:12:25Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.598Z"
+            }
+        },
+        {
+            "name": "USEPA/invdb-py",
+            "organization": "usepa",
+            "description": "",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/invdb-py/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/invdb-py",
+            "downloadURL": "https://github.com/USEPA/invdb-py/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/invdb-py/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/invdb-py.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-04-03T19:33:25Z",
+                "lastModified": "2025-12-09T19:37:41Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.599Z"
+            }
+        },
+        {
+            "name": "USEPA/invdb-ui",
+            "organization": "usepa",
+            "description": "",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/invdb-ui/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/invdb-ui",
+            "downloadURL": "https://github.com/USEPA/invdb-ui/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/invdb-ui/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/invdb-ui.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-04-03T18:48:02Z",
+                "lastModified": "2025-12-05T16:11:00Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.805Z"
+            }
+        },
+        {
+            "name": "USEPA/invitroTKdata",
+            "organization": "usepa",
+            "description": "This is an R data package containing a collection of in vitro toxicokinetic datasets (related to manuscripts) processed with the invitroTKstats R package.",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/invitroTKdata/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/invitroTKdata",
+            "downloadURL": "https://github.com/USEPA/invitroTKdata/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/invitroTKdata/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/invitroTKdata.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-05-06T13:56:21Z",
+                "lastModified": "2025-09-15T13:04:10Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.783Z"
+            }
+        },
+        {
+            "name": "USEPA/invitroTKstats",
+            "organization": "usepa",
+            "description": "Data processing pipeline R package for in vitro HTTK data (raw MS data to HTTK physiological parameters), including both frequentist and Bayesian estimates.",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/invitroTKstats/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/invitroTKstats",
+            "downloadURL": "https://github.com/USEPA/invitroTKstats/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/invitroTKstats/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/invitroTKstats.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-05-06T14:11:08Z",
+                "lastModified": "2025-09-15T13:04:18Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.830Z"
+            }
+        },
+        {
+            "name": "USEPA/invitrotkstats_dataproc",
+            "organization": "usepa",
+            "description": "Data processing scripts for manuscript datasets using the invitroTKstats R package.",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/invitrotkstats_dataproc/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/invitrotkstats_dataproc",
+            "downloadURL": "https://github.com/USEPA/invitrotkstats_dataproc/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/invitrotkstats_dataproc/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/invitrotkstats_dataproc.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-05-06T13:43:25Z",
+                "lastModified": "2025-12-15T20:36:54Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.789Z"
+            }
+        },
+        {
+            "name": "USEPA/lakemorpho2",
+            "organization": "usepa",
+            "description": "R package for calculating morphometry of lakes",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/lakemorpho2/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/lakemorpho2",
+            "downloadURL": "https://github.com/USEPA/lakemorpho2/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/lakemorpho2/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/lakemorpho2.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2016-05-11T17:59:00Z",
+                "lastModified": "2024-09-25T14:38:15Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.214Z"
+            }
+        },
+        {
+            "name": "USEPA/lsl-analysis",
+            "organization": "usepa",
+            "description": "",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/lsl-analysis/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/lsl-analysis",
+            "downloadURL": "https://github.com/USEPA/lsl-analysis/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/lsl-analysis/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/lsl-analysis.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-09-09T17:29:57Z",
+                "lastModified": "2025-10-15T18:24:43Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.820Z"
+            }
+        },
+        {
+            "name": "USEPA/pg-provision",
+            "organization": "usepa",
+            "description": "This is a read only mirror of canonical source: https://github.com/Scr1ptcat/pg-provision. Please submit issues/PRs upstream.",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/pg-provision/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/pg-provision",
+            "downloadURL": "https://github.com/USEPA/pg-provision/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/pg-provision/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/pg-provision.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-09-23T20:03:55Z",
+                "lastModified": "2025-10-01T14:49:33Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.822Z"
+            }
+        },
+        {
+            "name": "USEPA/pg-schema",
+            "organization": "usepa",
+            "description": "This is a read only mirror of canonical source: https://github.com/Scr1ptcat/pg-schema. Please submit issues/PRs upstream.",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/pg-schema/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/pg-schema",
+            "downloadURL": "https://github.com/USEPA/pg-schema/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/pg-schema/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/pg-schema.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-10-01T22:56:17Z",
+                "lastModified": "2025-10-01T22:56:17Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.836Z"
+            }
+        },
+        {
+            "name": "USEPA/retigo",
+            "organization": "usepa",
+            "description": "",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/retigo/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/retigo",
+            "downloadURL": "https://github.com/USEPA/retigo/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/retigo/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/retigo.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-04-17T16:05:45Z",
+                "lastModified": "2025-10-23T19:34:37Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.781Z"
+            }
+        },
+        {
+            "name": "USEPA/shinyPiSCES",
+            "organization": "usepa",
+            "description": "R Shiny version of the PiSCES web app",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/shinyPiSCES/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/shinyPiSCES",
+            "downloadURL": "https://github.com/USEPA/shinyPiSCES/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/shinyPiSCES/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/shinyPiSCES.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-07-02T13:39:40Z",
+                "lastModified": "2025-10-02T13:53:58Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.836Z"
+            }
+        },
+        {
+            "name": "USEPA/spmodel.glm.manuscript",
+            "organization": "usepa",
+            "description": "Supplement for \"Spatial generalized linear models in R using spmodel\"",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/spmodel.glm.manuscript/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/spmodel.glm.manuscript",
+            "downloadURL": "https://github.com/USEPA/spmodel.glm.manuscript/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/spmodel.glm.manuscript/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/spmodel.glm.manuscript.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2024-11-19T16:23:30Z",
+                "lastModified": "2025-12-11T00:05:18Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.588Z"
+            }
+        },
+        {
+            "name": "USEPA/testTemp",
+            "organization": "usepa",
+            "description": "",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/testTemp/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/testTemp",
+            "downloadURL": "https://github.com/USEPA/testTemp/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/testTemp/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/testTemp.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2025-09-30T23:55:33Z",
+                "lastModified": "2025-09-30T23:55:34Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.823Z"
+            }
+        },
+        {
+            "name": "USEPA/toxvaldb_dcap_prep",
+            "organization": "usepa",
+            "description": "This repository contains the input files and R scripts used to generate the files used for the Database Calibrated Assessment Process (DCAP) analysis using ToxValDB v9.6.1 data.",
+            "version": "",
+            "status": "Development",
+            "permissions": {
+                "usageType": "openSource",
+                "licenses": [
+                    {
+                        "URL": "https://github.com/USEPA/toxvaldb_dcap_prep/blob/master/LICENSE.md"
+                    }
+                ]
+            },
+            "homepageURL": "https://github.com/USEPA/toxvaldb_dcap_prep",
+            "downloadURL": "https://github.com/USEPA/toxvaldb_dcap_prep/archive/master.zip",
+            "disclaimerURL": "https://github.com/USEPA/toxvaldb_dcap_prep/blob/master/DISCLAIMER.md",
+            "repositoryURL": "https://github.com/USEPA/toxvaldb_dcap_prep.git/",
+            "vcs": "git",
+            "laborHours": 0,
+            "tags": [
+                "usgs"
+            ],
+            "languages": [],
+            "contact": {
+                "name": "USEPA"
+            },
+            "date": {
+                "created": "2024-05-28T18:23:05Z",
+                "lastModified": "2025-08-11T12:48:41Z",
+                "metadataLastUpdated": "2025-12-21T06:24:57.803Z"
+            }
         }
     ]
 }

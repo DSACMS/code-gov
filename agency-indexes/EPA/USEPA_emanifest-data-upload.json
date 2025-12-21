@@ -1,0 +1,33 @@
+{
+    "name": "USEPA/emanifest-data-upload",
+    "organization": "usepa",
+    "description": "",
+    "version": "",
+    "status": "Development",
+    "permissions": {
+        "usageType": "openSource",
+        "licenses": [
+            {
+                "URL": "https://github.com/USEPA/emanifest-data-upload/blob/master/LICENSE.md"
+            }
+        ]
+    },
+    "homepageURL": "https://github.com/USEPA/emanifest-data-upload",
+    "downloadURL": "https://github.com/USEPA/emanifest-data-upload/archive/master.zip",
+    "disclaimerURL": "https://github.com/USEPA/emanifest-data-upload/blob/master/DISCLAIMER.md",
+    "repositoryURL": "https://github.com/USEPA/emanifest-data-upload.git/",
+    "vcs": "git",
+    "laborHours": 0,
+    "tags": [
+        "usgs"
+    ],
+    "languages": [],
+    "contact": {
+        "name": "USEPA"
+    },
+    "date": {
+        "created": "2025-11-07T17:53:21Z",
+        "lastModified": "2025-12-03T14:07:29Z",
+        "metadataLastUpdated": "2025-12-21T06:24:57.943Z"
+    }
+}
