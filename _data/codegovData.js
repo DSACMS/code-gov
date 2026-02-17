@@ -87,8 +87,8 @@ module.exports = function() {
             agencies.push({
                 code: agencyName,
                 name: agencyName,
-                version: "1.0.0",
-                measurementType: "Projects",
+                version: '1.0.0',
+                measurementType: 'Projects',
                 organizations: agencyOrgs,
                 projectCount: releases.length,
                 totalLaborHours: releases.reduce((acc, curr) => acc + (curr.laborHours  || 0), 0)
@@ -112,7 +112,7 @@ module.exports = function() {
 
             projects.push({
                 agencyCode: agencyName,
-                agencyName: agencyName,
+                agencyName,
                 organization: release.organization,
                 name: release.name,
                 description: release.description,

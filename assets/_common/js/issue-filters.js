@@ -34,8 +34,7 @@ const applySearchFilter = (data, searchTerm) => {
   });
 };
 
-const applySelectFilters = (data, filters) => {
-  return Object.entries(filters).reduce((filtered, [key, value]) => {
+const applySelectFilters = (data, filters) => Object.entries(filters).reduce((filtered, [key, value]) => {
       if (!value || key === 'search') return filtered;
 
       return filtered.filter(issue => {
@@ -58,13 +57,12 @@ const applySelectFilters = (data, filters) => {
           }
       });
   }, data);
-};
 
 const sortData = (data, sortBy) => {
   const [field, direction] = sortBy.split('-');
 
   return [...data].sort((a, b) => {
-      let aVal, bVal;
+      let aVal; let bVal;
 
       switch (field) {
           case 'created':
@@ -294,8 +292,7 @@ const bindEvents = (state, setState) => {
   }
 };
 
-const preprocessIssuesData = (issues) => {
-  return issues.map(issue => {
+const preprocessIssuesData = (issues) => issues.map(issue => {
       // Extract repo name from URL
       if (issue.url) {
           const urlParts = issue.url.split('/');
@@ -310,7 +307,6 @@ const preprocessIssuesData = (issues) => {
       
       return issue;
   });
-};
 
 const initializeIssueFilters = (data) => {
   const processedData = preprocessIssuesData(data);

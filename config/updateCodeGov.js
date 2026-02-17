@@ -1,10 +1,10 @@
-const fs = require("fs").promises
+const fs = require('fs').promises
 const path = require('path')
 
 // these will always stay constant
 const CONFIG = {
-  agencyDirectory: path.resolve(__dirname, "../agency-indexes"),
-  outputFile: path.resolve(__dirname, "../codegov.json"),
+  agencyDirectory: path.resolve(__dirname, '../agency-indexes'),
+  outputFile: path.resolve(__dirname, '../codegov.json'),
   regex: /^(.*?)-.*\.json$/  
 }
 
@@ -25,7 +25,7 @@ async function updateCodeGov() {
       const filePath = path.join(CONFIG.agencyDirectory, file)
       
       try {
-        const content = await fs.readFile(filePath, "utf-8")
+        const content = await fs.readFile(filePath, 'utf-8')
         const jsonData = JSON.parse(content)
         
         // store the agency name only for readability in codegov.json 
@@ -45,7 +45,7 @@ async function updateCodeGov() {
     
     return updatedJSON
   } catch (error) {
-    console.error("❌ Failed to update codegov.json:", error)
+    console.error('❌ Failed to update codegov.json:', error)
   }
 }
 

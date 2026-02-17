@@ -1,9 +1,9 @@
-const fs = require("fs").promises
+const fs = require('fs').promises
 const path = require('path')
 
 const CONFIG = {
-    repoFilePath: path.resolve(__dirname, "../codegov.json"),
-    issueFilePath: path.resolve(__dirname, "../issue-pool.json"),
+    repoFilePath: path.resolve(__dirname, '../codegov.json'),
+    issueFilePath: path.resolve(__dirname, '../issue-pool.json'),
     regex: /https?:\/\/github\.com\/([^\/]+)\/([^\/]+)/,
     githubToken: process.env.GITHUB_TOKEN,
     requiredLabel: 'code-gov',
@@ -41,10 +41,10 @@ async function fetchWithRateLimit(url, options = {}) {
 }
 
 async function getRepoInfo() { // dont know how i feel about this double loop setup...
-    let repoInfo = []
+    const repoInfo = []
 
     try {
-        const content = await fs.readFile(CONFIG.repoFilePath, "utf-8") 
+        const content = await fs.readFile(CONFIG.repoFilePath, 'utf-8') 
         const jsonData = JSON.parse(content)
 
         for (const agencyKey in jsonData) {
@@ -71,7 +71,7 @@ async function getRepoInfo() { // dont know how i feel about this double loop se
             }
         }
     } catch (error) {
-        console.error("Error in getting repo information:", error)
+        console.error('Error in getting repo information:', error)
     }
 
     // console.log(repoInfo)
@@ -102,11 +102,11 @@ function transformIssue(issue, repo, repoLanguage) {
         id: String(issue.id),
         number: issue.number,
         url: issue.html_url,
-        content_title: issue.title || "",
-        content_description: issue.body || "",
+        content_title: issue.title || '',
+        content_description: issue.body || '',
         repo_name: repo.repoName,
         repo_url: `https://github.com/${repo.ownerName}/${repo.repoName}`,
-        repo_language: repoLanguage || "",
+        repo_language: repoLanguage || '',
         repo_owner: repo.ownerName,
         status_is_open: issue.state === 'open',
         status_has_assignee: issue.assignee !== null,
@@ -115,9 +115,9 @@ function transformIssue(issue, repo, repoLanguage) {
         time_last_updated: issue.updated_at,
         time_days_old: daysBetween(createdDate, now),
         time_last_activity_days_ago: daysBetween(updatedDate, now),
-        people_author: issue.user?.login || "",
+        people_author: issue.user?.login || '',
         people_assignee: issue.assignee?.login || null,
-        people_author_type: issue.user?.type || "",
+        people_author_type: issue.user?.type || '',
         labels_list: labelNames,
         labels_count: labelNames.length,
         labels_has_priority: checkLabelKeywords(issue.labels, ['priority', 'p0', 'p1', 'p2', 'urgent']),
@@ -146,7 +146,7 @@ async function processSingleRepository(repo, headers) {
         }
 
         const repoData = await repoResponse.json()
-        const repoLanguage = repoData.language || ""
+        const repoLanguage = repoData.language || ''
 
         let page = 1
         let hasMore = true
@@ -215,9 +215,9 @@ async function updateIssuePool() {
 
     try {
         await fs.writeFile(CONFIG.issueFilePath, JSON.stringify(issuePool, null, 2))
-        console.log(`Successfully saved issues!`)
+        console.log('Successfully saved issues!')
     } catch (error) {
-        console.error("Error saving issue pool:", error)
+        console.error('Error saving issue pool:', error)
     }
 
     return issuePool
