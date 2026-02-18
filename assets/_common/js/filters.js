@@ -30,8 +30,7 @@ const applySearchFilter = (data, searchTerm, targetType) => {
     });
 };
 
-const applySelectFilters = (data, filters, targetType) => {
-    return Object.entries(filters).reduce((filtered, [key, value]) => {
+const applySelectFilters = (data, filters, targetType) => Object.entries(filters).reduce((filtered, [key, value]) => {
         if (!value || key === 'search') return filtered;
 
         return filtered.filter(item => {
@@ -80,13 +79,12 @@ const applySelectFilters = (data, filters, targetType) => {
             }
         });
     }, data);
-};
 
 const sortData = (data, sortBy) => {
     const [field, direction] = sortBy.split('-');
 
     return [...data].sort((a, b) => {
-        let aVal, bVal;
+        let aVal; let bVal;
 
         switch (field) {
             case 'name':
