@@ -19,25 +19,38 @@ async function updateCodeGov() {
 
     // read all files in the directory
     const filenames = await fs.readdir(CONFIG.agencyDirectory)
-    
-    // we know that the directory will only contain json files so dont need to check for non jsons
-    for (const file of filenames) {
-      const filePath = path.join(CONFIG.agencyDirectory, file)
-      
-      try {
-        const content = await fs.readFile(filePath, 'utf-8')
-        const jsonData = JSON.parse(content)
-        
-        // store the agency name only for readability in codegov.json 
-        const matches = file.match(CONFIG.regex)
-        const agencyName = matches[1]
 
+    const processedFiles = await Promise.all(
+      filenames.map(async (file) => {
+        const filePath = path.join(CONFIG.agencyDirectory, file)
+
+        try {
+          const content = await fs.readFile(filePath, 'utf-8')
+          const jsonData = JSON.parse(content)
+
+          // store the agency name only for readability in codegov.json
+          const matches = file.match(CONFIG.regex)
+          const agencyName = matches ? matches[1] : null
+
+          if (!agencyName) {
+            return null
+          }
+
+          console.log(`✅ Successfully processed: ${file}`)
+          return [agencyName, jsonData]
+        } catch (error) {
+          console.error(`❌ Error processing file: ${file}`, error)
+          return null
+        }
+      })
+    )
+
+    processedFiles.forEach((entry) => {
+      if (entry) {
+        const [agencyName, jsonData] = entry
         updatedJSON[agencyName] = jsonData
-        console.log(`✅ Successfully processed: ${file}`)
-      } catch (error) {
-        console.error(`❌ Error processing file: ${file}`, error)
       }
-    }
+    })
     
     // actually update the codegov.json file
     const jsonString = JSON.stringify(updatedJSON, null, 2)
@@ -46,6 +59,7 @@ async function updateCodeGov() {
     return updatedJSON
   } catch (error) {
     console.error('❌ Failed to update codegov.json:', error)
+    return null
   }
 }
 

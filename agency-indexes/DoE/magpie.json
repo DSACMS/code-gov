@@ -1,31 +1,31 @@
 {
     "contact": {
-        "email": "christopher.kowalczyk@inl.gov"
+        "email": "holdensanchez2@llnl.gov"
     },
     "date": {
-        "created": "2018-04-24",
-        "metadataLastUpdated": "2023-03-15"
+        "created": "2018-07-30",
+        "metadataLastUpdated": "2020-02-05"
     },
-    "description": "Mesoscale Atomistic Glue Program for Integrated Execution",
-    "laborHours": 14333.6,
+    "description": "Magpie contains a number of scripts for running Big Data software in HPC environments, including Hadoop and Spark. There is support for Lustre, Slurm, Moab, Torque. and LSF.\n",
+    "laborHours": 52607.2,
     "languages": [],
-    "name": "magpie",
-    "organization": "Idaho National Laboratory (INL)",
+    "name": "Magpie",
+    "organization": "Lawrence Livermore National Laboratory (LLNL)",
     "permissions": {
         "exemptionText": null,
         "licenses": [
             {
-                "URL": "https://api.github.com/licenses/lgpl-2.1",
-                "name": "LGPL-2.1"
+                "URL": "https://api.github.com/licenses/gpl-2.0",
+                "name": "GPL-2.0"
             }
         ],
         "usageType": "openSource"
     },
-    "repositoryURL": "https://github.com/idaholab/magpie",
+    "repositoryURL": "https://github.com/LLNL/magpie",
     "status": "Production",
     "tags": [
         "DOE CODE",
-        "Idaho National Laboratory (INL)"
+        "Lawrence Livermore National Laboratory (LLNL)"
     ],
     "vcs": "git"
 }

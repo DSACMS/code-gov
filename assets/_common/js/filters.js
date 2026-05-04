@@ -59,16 +59,18 @@ const applySelectFilters = (data, filters, targetType) => Object.entries(filters
 
                 switch (key) {
                     case 'language':
-                        actualKey = 'languages'
+                        actualKey = 'languages';
                         break;
                     case 'category':
-                        actualKey = 'categories'
+                        actualKey = 'categories';
                         break;
                     case 'platform':
-                        actualKey = 'platforms'
+                        actualKey = 'platforms';
                         break;
                     case 'agency':
-                        actualKey = 'agencyName'
+                        actualKey = 'agencyName';
+                        break;
+                    default:
                         break;
                 }
 
@@ -107,10 +109,15 @@ const sortData = (data, sortBy) => {
                 return 0;
         }
 
-        if (direction === 'desc') {
-            return aVal < bVal ? 1 : aVal > bVal ? -1 : 0;
+        if (aVal === bVal) {
+            return 0;
         }
-        return aVal > bVal ? 1 : aVal < bVal ? -1 : 0;
+
+        if (direction === 'desc') {
+            return aVal < bVal ? 1 : -1;
+        }
+
+        return aVal > bVal ? 1 : -1;
     });
 };
 
@@ -165,7 +172,7 @@ const createProjectCardHTML = (project) => {
         if (Array.isArray(value)) return value;
         if (typeof value === 'string') return [value];
         return [];
-    }
+    };
 
     return `
         <div class="project-card">
@@ -213,7 +220,7 @@ const createCard = (item, targetType) => {
     const cardElement = document.createElement('div');
     cardElement.innerHTML = targetType === 'agencies'
         ? createAgencyCardHTML(item)
-        : createProjectCardHTML(item)
+        : createProjectCardHTML(item);
 
     return cardElement.firstElementChild;
 };
@@ -229,7 +236,7 @@ const updateDisplay = (state) => {
 
     state.filteredData.forEach(item => {
         const card = createCard(item, state.targetType);
-        container.appendChild(card)
+        container.appendChild(card);
     });
 };
 
