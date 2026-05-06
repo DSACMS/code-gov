@@ -81,10 +81,15 @@ const sortData = (data, sortBy) => {
               return 0;
       }
 
-      if (direction === 'desc') {
-          return aVal < bVal ? 1 : aVal > bVal ? -1 : 0;
+      if (aVal === bVal) {
+          return 0;
       }
-      return aVal > bVal ? 1 : aVal < bVal ? -1 : 0;
+
+      if (direction === 'desc') {
+          return aVal < bVal ? 1 : -1;
+      }
+
+      return aVal > bVal ? 1 : -1;
   });
 };
 
@@ -159,7 +164,7 @@ const createIssueCardHTML = (issue) => {
   `;
 };
 
-const createCard = (item, targetType) => {
+const createCard = (item) => {
   const cardElement = document.createElement('div');
   cardElement.innerHTML = createIssueCardHTML(item);
   return cardElement.firstElementChild;
@@ -176,7 +181,7 @@ const updateDisplay = (state) => {
 
   container.innerHTML = '';
   state.filteredData.forEach(item => {
-      const card = createCard(item, state.targetType);
+      const card = createCard(item);
       container.appendChild(card);
   });
 };

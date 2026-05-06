@@ -4,7 +4,7 @@ const path = require('path')
 const CONFIG = {
     repoFilePath: path.resolve(__dirname, '../codegov.json'),
     issueFilePath: path.resolve(__dirname, '../issue-pool.json'),
-    regex: /https?:\/\/github\.com\/([^\/]+)\/([^\/]+)/,
+    regex: /https?:\/\/github\.com\/([^/]+)\/([^/]+)/,
     githubToken: process.env.GITHUB_TOKEN,
     requiredLabel: 'code-gov',
     concurrentRepos: 6,  // processing 6 repos at once but need to find the sweetspot because at this rate, it takes 18 minutes for the entire script to run through codegov.json. the "bathtub curve" is what we have here and what we need to experiment with and solve 👀
@@ -26,7 +26,9 @@ async function fetchWithRateLimit(url, options = {}) {
     if (CONFIG.rateLimitRemaining <= 10 && Date.now() < CONFIG.rateLimitReset) {
         const waitTime = CONFIG.rateLimitReset - Date.now() + 1000 // add 1 second buffer
         console.log(`Rate limit low (${CONFIG.rateLimitRemaining} remaining). Waiting ${Math.round(waitTime/1000)}s...`)
-        await new Promise(resolve => setTimeout(resolve, waitTime))
+        await new Promise((resolve) => {
+            setTimeout(resolve, waitTime)
+        })
     }
 
     const response = await fetch(url, options)
@@ -34,8 +36,8 @@ async function fetchWithRateLimit(url, options = {}) {
     const remainingHeader = response.headers.get('X-RateLimit-Remaining')
     const resetHeader = response.headers.get('X-RateLimit-Reset')
     
-    if (remainingHeader) CONFIG.rateLimitRemaining = parseInt(remainingHeader)
-    if (resetHeader) CONFIG.rateLimitReset = parseInt(resetHeader) * 1000
+    if (remainingHeader) CONFIG.rateLimitRemaining = parseInt(remainingHeader, 10)
+    if (resetHeader) CONFIG.rateLimitReset = parseInt(resetHeader, 10) * 1000
     
     return response
 }
@@ -47,29 +49,30 @@ async function getRepoInfo() { // dont know how i feel about this double loop se
         const content = await fs.readFile(CONFIG.repoFilePath, 'utf-8') 
         const jsonData = JSON.parse(content)
 
-        for (const agencyKey in jsonData) {
-            const agency = jsonData[agencyKey]
-
-            if (agency.releases) {
-                for (const organization of agency.releases) {
-
-                    if (organization.repositoryURL) {
-                        const match = organization.repositoryURL.match(CONFIG.regex)
-
-                        if (match) {
-                            const [url, owner, repo] = match
-    
-                            repoInfo.push({
-                                ownerName: owner,
-                                repoName: repo
-                            })
-                        } else {
-                            console.warn(`No match found for URL: ${organization.repositoryURL}`)
-                        }
-                    }
-                }
+        Object.values(jsonData).forEach((agency) => {
+            if (!agency.releases) {
+                return
             }
-        }
+
+            agency.releases.forEach((organization) => {
+                if (!organization.repositoryURL) {
+                    return
+                }
+
+                const match = organization.repositoryURL.match(CONFIG.regex)
+
+                if (match) {
+                    const [, owner, repo] = match
+
+                    repoInfo.push({
+                        ownerName: owner,
+                        repoName: repo
+                    })
+                } else {
+                    console.warn(`No match found for URL: ${organization.repositoryURL}`)
+                }
+            })
+        })
     } catch (error) {
         console.error('Error in getting repo information:', error)
     }
@@ -148,37 +151,34 @@ async function processSingleRepository(repo, headers) {
         const repoData = await repoResponse.json()
         const repoLanguage = repoData.language || ''
 
-        let page = 1
-        let hasMore = true
-
-        while (hasMore) {
+        const fetchIssuePage = async (page) => {
             const issuesUrl = `https://api.github.com/repos/${repo.ownerName}/${repo.repoName}/issues?page=${page}&per_page=100&state=open&labels=${CONFIG.requiredLabel}`
             const issuesResponse = await fetchWithRateLimit(issuesUrl, { headers })
 
             if (!issuesResponse.ok) {
                 console.error(`Failed to fetch issues for ${repo.ownerName}/${repo.repoName}: ${issuesResponse.status}`)
-                break
+                return
             }
 
             const issues = await issuesResponse.json()
             
             // endpoint always returns both issues and pull requests so we ignore the PRs
-            for (const [index, issue] of issues.entries()) {
+            issues.forEach((issue, index) => {
                 if (issue.pull_request) {
-                    continue
+                    return
                 }
-                
+
                 const transformedIssue = transformIssue(issue, repo, repoLanguage)
                 repoIssues[transformedIssue.id] = transformedIssue // is having the ID is the best key name?
                 console.log(`✅ Processed ${index + 1}/${issues.length}: ${repo.ownerName}/${repo.repoName}`)
-            }
+            })
 
-            if (issues.length < 100) {
-                hasMore = false
+            if (issues.length === 100) {
+                await fetchIssuePage(page + 1)
             }
-
-            page++
         }
+
+        await fetchIssuePage(1)
     } catch (error) {
         console.error(`❌ Error processing ${repo.ownerName}/${repo.repoName}:`, error)
     }
@@ -193,25 +193,33 @@ async function updateIssuePool() {
     const headers = getHeaders()
 
     // process repositories in chunks of 3 for parallel processing
-    for (let i = 0; i < repoInfo.length; i += CONFIG.concurrentRepos) {
-        const chunk = repoInfo.slice(i, i + CONFIG.concurrentRepos)
-        console.log(`Processing chunk ${Math.floor(i/CONFIG.concurrentRepos) + 1}/${Math.ceil(repoInfo.length/CONFIG.concurrentRepos)} (${chunk.length} repos)`)
-        
-        const chunkPromises = chunk.map(repo => processSingleRepository(repo, headers))
+    const chunkCount = Math.ceil(repoInfo.length / CONFIG.concurrentRepos)
+    const chunks = Array.from({ length: chunkCount }, (_, index) => {
+        const start = index * CONFIG.concurrentRepos
+        return repoInfo.slice(start, start + CONFIG.concurrentRepos)
+    })
+
+    await chunks.reduce(async (previousChunk, chunk, index) => {
+        await previousChunk
+        console.log(`Processing chunk ${index + 1}/${chunks.length} (${chunk.length} repos)`)
+
+        const chunkPromises = chunk.map((repo) => processSingleRepository(repo, headers))
         const chunkResults = await Promise.allSettled(chunkPromises)
-        
-        chunkResults.forEach((result, index) => {
+
+        chunkResults.forEach((result, resultIndex) => {
             if (result.status === 'fulfilled') {
                 Object.assign(issuePool, result.value)
             } else {
-                console.error(`Failed ${chunk[index].ownerName}/${chunk[index].repoName}:`, result.reason)
+                console.error(`Failed ${chunk[resultIndex].ownerName}/${chunk[resultIndex].repoName}:`, result.reason)
             }
         })
 
-        if (i + CONFIG.concurrentRepos < repoInfo.length) {
-            await new Promise(resolve => setTimeout(resolve, 1000))
+        if (index + 1 < chunks.length) {
+            await new Promise((resolve) => {
+                setTimeout(resolve, 1000)
+            })
         }
-    }
+    }, Promise.resolve())
 
     try {
         await fs.writeFile(CONFIG.issueFilePath, JSON.stringify(issuePool, null, 2))
