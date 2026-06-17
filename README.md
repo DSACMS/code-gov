@@ -123,19 +123,45 @@ Establish and maintain guidance, policies, practices, and talent pipelines that 
 
 ## CMS OSPO in the News
 
-- [Open Source and the Digital Service at CMS.gov - All Things Open 2022](https://www.youtube.com/watch?v=Q0EJIevZS0I)
-- Whitehouse Open Source Software Security Initiative (OS3I) Supply Chain RFI
+### 2026
+- [Punch Tape: Inside the Federal Government's First OSPO](https://youtu.be/ZETBjaiI12M?si=bFgWPDrisDMxgIVc)
+- [GW Open Source Conference: It Is Time: Succession Planning, Shepherding, and Sunsetting Open Source Projects](https://ospo.gwu.edu/oscon-2026-details)
+- [Open Source Summit North America: From Active To Archive: Shepherding Repositories Through Their Sunset](https://www.youtube.com/watch?v=T9DXykNLl3I)
+
+### 2025
+- [Sharing is Caring: How CMS is Leading on Federal Open Source Requirements: A FormFest 2025 Profile](https://digitalgovernmenthub.org/publications/sharing-is-caring-how-cms-is-leading-on-federal-open-source-requirements-a-formfest-2025-profile/)
+- [GovCIO: Fed Efficiency Drive Includes Code-Sharing Law](https://govciomedia.com/fed-efficiency-drive-includes-code-sharing-law-metahumans/)
+- [GovCIO: New SHARE IT Act Mandates Federal Code Sharing to Cut Software Costs](https://govciomedia.com/new-share-it-act-mandates-federal-code-sharing-to-cut-software-costs/)
+- [FedScoop: Meet the Winners of the 2025 FedScoop50](https://fedscoop.com/fedscoop50/winners/)
+
+### 2024
+- [Health IT Leaders Receive Flywheel Awards from GovCIO Media & Research](https://govciomedia.com/health-it-leaders-receive-flywheel-awards-from-govcio-media-research/)
+- [Feds Prioritize Open-Source Software Security Initiatives](https://govciomedia.com/feds-prioritize-open-source-so-ftware-security-initiatives/)
+- [Nava Open-Source Summit: Modernizing Government with Code](https://ospo.gwu.edu/nava-open-source-summit-modernizing-government-code)
+- [Highlighting Patient and Expert Interviews from the 2024 Health Datapalooza](https://academyhealth.org/blog/2024-10/highlighting-patient-and-expert-interviews-2024-health-datapalooza)
+- [Establishing the First Open Source Program Office (OSPO) at a United States Federal Agency](https://insights.sei.cmu.edu/library/establishing-the-first-open-source-program-office-ospo-at-a-united-states-federal-agency/)
+- [Exploring Digital Transformation at the Centers for Medicare & Medicaid Services](https://www.businessofgovernment.org/blog/exploring-digital-transformation-centers-medicare-medicaid-services)
+- [PyCon May 2024](https://github.com/DSACMS/pycon-poster-2024/blob/main/repo-baselines.pdf)
+- Code for America Summit 2024
+- Open Source Summit North America (OSSNA) 2024 
+    * [Establshing a Repository Baseline](https://www.youtube.com/watch?v=v0aaVBicOjI)
+    * [Repository Cohorts](https://www.youtube.com/watch?v=FpVNSAj9eDg)
+- [Biden-⁠Harris Administration Releases End of Year Report on Open-Source Software Security Initiative](https://www.whitehouse.gov/wp-content/uploads/2024/01/Securing-the-Open-Source-Software-Ecosystem-OS3I-End-of-Year-Report-MASTERCOPY.pdf)
+- [Biden-⁠Harris Administration Releases End of Year Report on Open-Source Software Security and Memory Safe Programming Languages](https://www.whitehouse.gov/wp-content/uploads/2023/09/OS3I-RFI-Final-09232023.pdf)
+- [US Digital Response Case Study: How One Federal Agency Worked to Release Open Source Software Responsibly](https://www.usdigitalresponse.org/resources/cms-open-source-software)
+- [Managing Federal CHAOSS at CMS.gov - CHAOSScast](https://podcast.chaoss.community/81)
+
+### 2023
+- [Inside CMS’ Groundbreaking Open Source Program Office](https://www.youtube.com/watch?v=34LQnyB3ydQ)
+- [OSPOs in Highly Regulated Environments Panel Discussion @ Open Source Summit EU 2023](https://osseu2023.sched.com/event/1OGeo/panel-discussion-ospos-transition-paths-for-regulated-environments-ana-jimenez-santamaria-linux-foundation-maurice-hendriks-city-of-amsterdam-nico-rikken-alliander-clare-dillon-innersourcecommons-thomas-steenbergen-epam?iframe=no&w=100%&sidebar=yes&bg=no)
 - [Innersource Summit 2023: Innersource to Open Source Journey in Government](https://innersourcecommons.org/events/isc-2023/)
 - [Inside CMS’ Groundbreaking Open Source Program Office](https://www.youtube.com/watch?v=34LQnyB3ydQ)
 - [Repodiving into Open Source at CMS.gov](https://www.youtube.com/watch?v=AypgQch2Qpk)
-- [OSPOs in Highly Regulated Environments Panel Discussion @ Open Source Summit EU 2023](https://osseu2023.sched.com/event/1OGeo/panel-discussion-ospos-transition-paths-for-regulated-environments-ana-jimenez-santamaria-linux-foundation-maurice-hendriks-city-of-amsterdam-nico-rikken-alliander-clare-dillon-innersourcecommons-thomas-steenbergen-epam?iframe=no&w=100%&sidebar=yes&bg=no)
 - TODOGroup OSPOlogy September 2023 Meeting
 - OSPOs for Good Summit 2023 @ United Nations Headquarters NYC
-- [PyCon May 2024](https://github.com/DSACMS/pycon-poster-2024/blob/main/repo-baselines.pdf)
-- Code for America May 2024
-- Open Source Summit North America (OSSNA) 2024
-  - [Establishing a Repository Baseline](https://www.youtube.com/watch?v=v0aaVBicOjI)
-  - [Repository Cohorts](https://www.youtube.com/watch?v=FpVNSAj9eDg)
+
+### 2022
+- [Open Source and the Digital Service at CMS.gov - All Things Open 2022](https://www.youtube.com/watch?v=Q0EJIevZS0I)
 
 # Acknowlegements
 
